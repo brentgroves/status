@@ -9,6 +9,23 @@ This status report will be available soon from your devcon2 logon at ~/src/repsy
 
 bcook,sjackson,kyoung/k8sAdmin1!
 
+- Thank you Sam for the SQL
+
+```sql
+SELECT 
+    Datasource_Key,
+    Datasource_Name,
+    Datasource_Type,
+    Note,
+    Module,
+    [Database_Name],
+    [Procedure_Name],
+    [Text]
+  FROM Plex.Datasource_Text
+```
+
+- Can Sam and Kevin connect to devcon2,10.1.0.120, as sjackson,kyoung k8sAdmin1!
+
 ## Observability
 
 Now that the load balancer and ingress controller are working try getting the ingress controller to collect metrics using prometheus and graph data in graphina.
@@ -23,3 +40,4 @@ Prometheus
 Elasticsearch
 Alertmanager
 
+- **[Report System Combined Repos](../../README.md)**
