@@ -22,17 +22,11 @@ While working on this query with Kevin took some notes on the query process that
 
 ### Observability
 
-Now that the load balancer and ingress controller are working try getting the ingress controller to collect metrics using prometheus and graph data in graphina.
+Now that the load balancer and ingress controller are working try getting the to collect metrics using prometheus and graph data in graphina.
 
-- Install MicroK8s observability stack
-- monitor the ingress controller with prometheus
-- configure MicroK8s to ship logs and metric data to an external
- Observability stack for logging, monitoring and alerting.
+**[Kube-Prometheus-stack](https://medium.com/israeli-tech-radar/how-to-create-a-monitoring-stack-using-kube-prometheus-stack-part-1-eff8bf7ba9a9)**, also as Prometheus Operator, is a popular open-source project providing complete monitoring and alerting solutions for Kubernetes clusters. It combines tools and components to create a monitoring stack for Kubernetes environments.
 
-The Observability stack used in this example consists of:
-Prometheus
-Elasticsearch
-Alertmanager
+**![Prometheus-Grafana](https://miro.medium.com/v2/resize:fit:720/format:webp/1*EPHj4qLIyooRFebYERN3dA.png)**
 
 ## What is OpenStack?
 
@@ -54,16 +48,16 @@ There are many discarded R620 that can be used to experiment with MicroStack.
 
 ### R620 References
 
-https://savemyserver.com/dell-poweredge-r620-tech-specs/
+<https://savemyserver.com/dell-poweredge-r620-tech-specs/>
 
 ## Dell PowerEdge R620 Server Data Sheet
 
 PowerEdge R620 Server - At A Glance
-Manufacturer	Dell
-Brand	PowerEdge
-Model	R620
-Processors	2x Intel Xeon processor E5-2600 and E5-2600 v2 product families
-Storage	
+Manufacturer Dell
+Brand PowerEdge
+Model R620
+Processors 2x Intel Xeon processor E5-2600 and E5-2600 v2 product families
+Storage
 Drive bay options:
  Up to 4 x 2.5” or
  Up to 8 x 2.5” or
@@ -71,6 +65,5 @@ Drive bay options:
  Up to 4 x 2.5” + 2 x Express
 Flash
 
-Generation	12th Gen Server
-Form Factor	1U Rack-Mountable
-
+Generation 12th Gen Server
+Form Factor 1U Rack-Mountable
