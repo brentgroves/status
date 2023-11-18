@@ -36,7 +36,8 @@ OpenStack is one of the most active open source projects in the world. It is an 
 
 ## Why Support OpenStack?
 
-Setting up a Cloud Provisioning service is time consuming but if it becomes much easier to do then compition will increase and costs will decrease.
+- Setting up a Cloud Provisioning service is time consuming but if it becomes much easier to do then compition will increase and costs will decrease.
+- Integration Hypervisor and Kubernetes container orchestrator services so the K8s API includes the ability to request resources directly from the hypervisor.
 
 ## **[OpenStack Components](https://www.openstack.org/software/project-navigator/openstack-components#openstack-services)**
 
