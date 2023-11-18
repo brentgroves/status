@@ -30,9 +30,26 @@ Now that the load balancer and ingress controller are working try getting the to
 
 ## What is OpenStack?
 
-OpenStack is a collection of open-source projects designed to work together to form the basis of a cloud. OpenStack can be used for both private and public cloud implementation.
+**[OpenStack Development Guide](https://ubuntu.com/engage/openstack-deployment-guide)**
 
-## Canonical MicroStack
+OpenStack is one of the most active open source projects in the world. It is an essential component of private cloud infrastructure for countless businesses, and over the last few years, it has evolved to become the de-facto standard for implementing cloud computing platforms.
+
+## Why Support OpenStack?
+
+Setting up a Cloud Provisioning service is time consuming but if it becomes much easier to do then compition will increase and costs will decrease.
+
+## **[OpenStack Components](https://www.openstack.org/software/project-navigator/openstack-components#openstack-services)**
+
+OpenStack Services
+An OpenStack deployment contains a number of components providing APIs to access infrastructure resources. This page lists the various services that can be deployed to provide such resources to cloud end users.
+
+- **[Compute Services](https://www.openstack.org/software/releases/antelope/components/nova)**
+- **[Containers Service](https://www.openstack.org/software/releases/antelope/components/zun)**
+- **[Bare Metal Provisioning](https://www.openstack.org/software/releases/antelope/components/ironic)**
+- **[Life Cycle Management](https://www.openstack.org/software/releases/antelope/components/cyborg)**
+
+
+## Canonical **[K8s-native MicroStack](https://ubuntu.com/blog/k8s-native-microstack)**
 
 OpenStack is no doubt a wonderful and successful piece of software. It allows you to create your own cloud infrastructure, and thanks to its open-source nature, it’s free to use for everyone. But as with many giant software projects, all that power comes with a challenge: it is reasonably complex to install and configure. A number of OpenStack distributions do exist that intend to make engineers’ life a lot easier, but those also tend to be more complex than a non-experienced user would like them to be.
 
@@ -44,7 +61,7 @@ To solve this problem once and for all, Canonical created a simplified and easy-
 
 ## Dell PowerEdge R620 Server
 
-There are many discarded R620 that can be used to experiment with MicroStack.
+There are many discarded R620 that can be used to experiment with creating a multi-node MicroStack.
 
 ### R620 References
 
