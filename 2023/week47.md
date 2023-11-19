@@ -22,7 +22,14 @@ While working on this query with Kevin took some notes on the query process that
 
 ### Observability
 
-Now that the load balancer and ingress controller are working try getting the to collect metrics using prometheus and graph data in graphina.
+Now that the load balancer and ingress controller are working collect metrics using prometheus and graph time-series data in graphina.
+
+Server Comparison:
+
+- UDP Server - Broadcast data to certain mac addresses.
+- MQTT Server - Publish/Subscribe model.
+- OPC Server - Polls for tag changes. Clients subscribe to data points.
+- Metric Server - Polls key/value pairs of data sources at a set interval. Maintains a time-series database.
 
 **[Kube-Prometheus-stack](https://medium.com/israeli-tech-radar/how-to-create-a-monitoring-stack-using-kube-prometheus-stack-part-1-eff8bf7ba9a9)**, also as Prometheus Operator, is a popular open-source project providing complete monitoring and alerting solutions for Kubernetes clusters. It combines tools and components to create a monitoring stack for Kubernetes environments.
 
