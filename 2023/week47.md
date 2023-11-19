@@ -92,3 +92,12 @@ Flash
 
 Generation 12th Gen Server
 Form Factor 1U Rack-Mountable
+
+## React Native
+
+https://www.lexis.solutions/blog/wrap-react-website-in-a-native-app
+
+React and React Native are the most popular technologies for developing web and mobile applications right now. They are widely adopted by developers and companies alike due to their efficiency, speed, and ability to create high-performance user interfaces.
+
+React Native is a popular choice when it comes to developing hybrid apps. It's an open-source framework created by Facebook that combines the benefits of both React and React Native. It enables developers to build high-performance applications compatible with multiple platforms while providing access to device-specific features like push notifications.
+
