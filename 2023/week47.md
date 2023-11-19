@@ -35,7 +35,16 @@ Server Comparison:
 
 **![Prometheus-Grafana](https://miro.medium.com/v2/resize:fit:720/format:webp/1*EPHj4qLIyooRFebYERN3dA.png)**
 
-## What is OpenStack?
+## Cloud Provisioning Software
+
+This software manages and controls hypervisors, storage solutions, and container orchestrators using an API. It helps to automate:
+
+- dynamic allocation of storage
+- creation of virtual machines
+- life-cycle of containers
+
+## OpenStack (Cloud Provisioning)
+
 
 **[OpenStack Development Guide](https://ubuntu.com/engage/openstack-deployment-guide)**
 
