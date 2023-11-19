@@ -20,9 +20,7 @@ While working on this query with Kevin took some notes on the query process that
 
 ## Report System on Private Cloud
 
-### Observability
-
-Now that the load balancer and ingress controller are working collect metrics using prometheus and graph time-series data in graphina.
+Now that the load balancer and ingress controller are working deploy the K8s prometheus stack.
 
 Server Comparison:
 
@@ -31,11 +29,13 @@ Server Comparison:
 - OPC Server - Polls for tag changes. Clients subscribe to data points.
 - Metric Server - Polls key/value pairs of data sources at a set interval. Maintains a time-series database.
 
+The Prometheus monitoring system and time series database is the most popular metric server. Prometheus provides a functional query language called PromQL (Prometheus Query Language) that lets the user select and aggregate time series data in real time. The result of an expression can either be shown as a graph, viewed as tabular data in Prometheus's expression browser, or consumed by external systems via the HTTP API.
+
 **[Kube-Prometheus-stack](https://medium.com/israeli-tech-radar/how-to-create-a-monitoring-stack-using-kube-prometheus-stack-part-1-eff8bf7ba9a9)**, also as Prometheus Operator, is a popular open-source project providing complete monitoring and alerting solutions for Kubernetes clusters. It combines tools and components to create a monitoring stack for Kubernetes environments.
 
 **![Prometheus-Grafana](https://miro.medium.com/v2/resize:fit:720/format:webp/1*EPHj4qLIyooRFebYERN3dA.png)**
 
-## Cloud Provisioning Software
+## Build our Private Cloud by using Open-Stack cloud provisioning software
 
 This software manages and controls hypervisors, storage solutions, and container orchestrators using an API. It helps to automate:
 
