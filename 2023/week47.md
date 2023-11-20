@@ -51,7 +51,6 @@ This software manages and controls hypervisors, storage solutions, and container
 
 ## OpenStack (Cloud Provisioning)
 
-
 **[OpenStack Development Guide](https://ubuntu.com/engage/openstack-deployment-guide)**
 
 OpenStack is one of the most active open source projects in the world. It is an essential component of private cloud infrastructure for countless businesses, and over the last few years, it has evolved to become the de-facto standard for implementing cloud computing platforms.
@@ -70,7 +69,6 @@ An OpenStack deployment contains a number of components providing APIs to access
 - **[Containers Service](https://www.openstack.org/software/releases/antelope/components/zun)**
 - **[Bare Metal Provisioning](https://www.openstack.org/software/releases/antelope/components/ironic)**
 - **[Life Cycle Management](https://www.openstack.org/software/releases/antelope/components/cyborg)**
-
 
 ## Canonical **[K8s-native MicroStack](https://ubuntu.com/blog/k8s-native-microstack)**
 
@@ -110,9 +108,8 @@ Form Factor 1U Rack-Mountable
 
 ## React Native
 
-https://www.lexis.solutions/blog/wrap-react-website-in-a-native-app
+<https://www.lexis.solutions/blog/wrap-react-website-in-a-native-app>
 
 React and React Native are the most popular technologies for developing web and mobile applications right now. They are widely adopted by developers and companies alike due to their efficiency, speed, and ability to create high-performance user interfaces.
 
 React Native is a popular choice when it comes to developing hybrid apps. It's an open-source framework created by Facebook that combines the benefits of both React and React Native. It enables developers to build high-performance applications compatible with multiple platforms while providing access to device-specific features like push notifications.
-
