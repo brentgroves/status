@@ -5,6 +5,12 @@
 I love you my son.  Please don't forget that I am always with you.  Through the tough times I will support you.  Every moment while you work I am with you too.  I intend for you and I to have an enjoyable time together as my plan unfolds for you life.  Remember to help and give your all to everyone I place in your life and you will have peace and joy in abundance my beloved son!
 
 Good morning dear ones,
+May each of you have a good holiday enjoying delicious food, friends, and family this week of thanksgiving :-)  As always please feel free to get a hold of me about anything at work or at home.
+
+-Sincerely yours,
+Brent
+
+260-564-4868
 
 This status report will be available soon from your devcon2 logon at ~/src/repsys/status/2023/week47.md and you can view it by running Visual Studio Code from devcon2 and adding the ~/src/repsys folder to your workspace.  Until the automation process to update these files is complete please open a terminal and run ~/freshstart.md before viewing the status report or ~/src/repsys/README.md which is the index of the report system project.
 
