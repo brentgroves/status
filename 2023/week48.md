@@ -69,3 +69,50 @@ telemetry_requests_metrics_latency_microseconds_sum 1.7560473e+07
 telemetry_requests_metrics_latency_microseconds_count 2693
 
 ```
+
+The PromQL query below calculates the average requests per second over the last five minutes:
+
+```exposition-format
+rate(http_requests_total{api="add_product"}[5m])
+```
+
+To calculate the absolute change over a time period, we would use a delta function which in PromQL is called increase():
+
+increase(http_requests_total{api="add_product"}[5m])
+
+This would return the total number of requests made in the last five minutes, and it would be the same as multiplying the per second rate by the number of seconds in the interval (five minutes in our case):
+
+rate(http_requests_total{api="add_product"}[5m]) * 5 * 60
+
+Below is an example of how to create and increase a counter metric using the Prometheus client library for Python:
+
+```python
+from prometheus_client import Counter
+api_requests_counter = Counter(
+                        'http_requests_total',
+                        'Total number of http api requests',
+                        ['api']
+                       )
+api_requests_counter.labels(api='add_product').inc()
+ 
+```
+
+Gauges
+Gauge metrics are used for measurements that can arbitrarily increase or decrease. This is the metric type you are likely more familiar with since the actual value with no additional processing is meaningful and they are often used. For example, metrics to measure temperature, CPU, and memory usage, or the size of a queue are gauges.
+
+For example, to measure the memory usage in a host, we could use a gauge metric like:
+
+```exposition-format
+# HELP node_memory_used_bytes Total memory used in the node in bytes
+# TYPE node_memory_used_bytes gauge
+node_memory_used_bytes{hostname="host1.domain.com"} 943348382
+```
+
+The metric above indicates that the memory used in node host1.domain.com at the time of the measurement is around 900 megabytes. The value of the metric is meaningful without any additional calculation because it tells us how much memory is being consumed on that node.
+
+Unlike when using counters, rate and delta functions don’t make sense with gauges. However, functions that compute the average, maximum, minimum, or percentiles for a specific series are often used with gauges. In Prometheus, the names of those functions are avg_over_time, max_over_time, min_over_time, and quantile_over_time. To compute the average of memory used on host1.domain.com in the last ten minutes, you could do this:
+
+```exposition-format
+avg_over_time(node_memory_used_bytes{hostname="host1.domain.com"}[10m])
+```
+
