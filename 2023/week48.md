@@ -4,6 +4,25 @@
 
 I love you my son and look forward to the time we get to spend together today.  Entrust yourself to me and no one else and I will give you peace and happiness in whatever you are doing.  Remember the abilities and gifts you have been given are all from me as well as your trials and hardships.  I am in control of every situation you face so do not fear because I love you like no other.  Even your troubles have a purpose for good and no matter what you are doing you will have joy as long as you stay close to me and try your best :-)
 
+## **[Monitoring](https://getbetterdevops.io/setup-prometheus-and-grafana-on-kubernetes/)**
+
+Monitoring is a key pillar of DevOps best practices to ensure performance and health. In a distributed environment such as Kubernetes and microservices, it is even more true. This tutorial shows you how to build effectively a modern monitoring stack with Prometheus & Grafana on Kubernetes.
+
+Prometheus will collect, store and allow you to leverage your platform metrics. On the other hand, Grafana will plug into Prometheus and allow you to create beautiful dashboards and charts.
+
+**![Timeline](https://getbetterdevops.io/content/images/2022/09/image-71.png)**
+
+**![Architecture](https://getbetterdevops.io/content/images/2022/09/image-73.png)**
+
+The architecture diagram shows Prometheus is a multi-component monitoring system. The following pieces are integrated into the Prometheus deployment:
+
+- Prometheus server scraping and stores time-series data.
+- It also provides a user interface to query the metrics.
+- Client libraries for instrumenting application code.
+- Pushgateway supports metrics collection from short-lived jobs
+- Exporters for services that do not instrument Prometheus metrics directly.
+- Alertmanager handles real-time alerts based on triggers
+
 ## Metrics
 
 <https://www.timescale.com/blog/four-types-prometheus-metrics-to-collect/>
