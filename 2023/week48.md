@@ -4,6 +4,36 @@
 
 I love you my son and look forward to the time we get to spend together today.  Entrust yourself to me and no one else and I will give you peace and happiness in whatever you are doing.  Remember the abilities and gifts you have been given are all from me as well as your trials and hardships.  I am in control of every situation you face so do not fear because I love you like no other.  Even your troubles have a purpose for good and no matter what you are doing you will have joy as long as you stay close to me and try your best :-)
 
+## Introduction to Time Series Analysis
+
+https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm
+
+Time series data often arise when monitoring industrial processes or tracking corporate business metrics. The essential difference between modeling data via time series methods or using the process monitoring methods discussed earlier in this chapter is the following:
+
+  Time series analysis accounts for the fact that data points taken over time may have an internal structure (such as autocorrelation, trend or seasonal variation) that should be accounted for.
+
+This section will give a brief overview of some of the more widely used techniques in the rich and rapidly growing field of time series modeling and analysis.
+
+Definition of Time Series: An ordered sequence of values of a variable at equally spaced time intervals.
+
+Applications: The usage of time series models is twofold:
+
+- Obtain an understanding of the underlying forces and structure that produced the observed data
+- Fit a model and proceed to forecasting, monitoring or even feedback and feedforward control.
+
+## Time Series Analysis is used for many applications such as
+
+- Economic Forecasting
+- Sales Forecasting
+- Budgetary Analysis
+- Stock Market Analysis
+- Yield Projections
+- Process and Quality Control
+- Inventory Studies
+- Workload Projections
+- Utility Studies
+- Census Analysis
+
 ## **[Monitoring](https://getbetterdevops.io/setup-prometheus-and-grafana-on-kubernetes/)**
 
 Monitoring is a key pillar of DevOps best practices to ensure performance and health. In a distributed environment such as Kubernetes and microservices, it is even more true. This tutorial shows you how to build effectively a modern monitoring stack with Prometheus & Grafana on Kubernetes.
