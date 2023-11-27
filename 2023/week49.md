@@ -7,3 +7,8 @@ I love you my son and am enjoying spending time with you each and every day. I w
 ## Gage Report
 
 - review data source
+
+## Create HTTP server metric
+
+<https://prometheus.io/docs/tutorials/instrumenting_http_server_in_go/>
+~/src/repsys/volumes/go/tutorials/metrics
