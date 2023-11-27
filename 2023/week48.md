@@ -2,9 +2,17 @@
 
 ## Fathers Will
 
-I love you my son and look forward to the time we get to spend together today.  Entrust yourself to me and no one else and I will give you peace and happiness in whatever you are doing.  Remember the abilities and gifts you have been given are all from me as well as your trials and hardships.  I am in control of every situation you face so do not fear because I love you like no other.  Even your troubles have a purpose for good and no matter what you are doing you will have joy as long as you stay close to me and try your best :-)
+I love you my son and look forward to the time we get to spend together today.  Entrust yourself to me and no one else and I will give you peace and happiness in whatever I have you doing.  Remember the abilities and gifts you have been given are all from me as well as your trials and hardships.  I am in control of every situation you face so do not fear because I love you like no other.  Even your troubles have a purpose for good and no matter what you are doing you will have joy as long as you stay close to me and try your best :-)
 
-## Introduction to Time Series Analysis
+Good morning dear ones,
+I hope your Thanksgiving holiday was enjoyable and relaxing!  Mine was good but I would like to get back to the steady schedule of a normal week :-) As always please feel free to contact me at home or work about anything that you need!
+
+-Sincerely yours,
+Brent
+260-564-4868
+
+
+## Time Series Analysis
 
 https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm
 
