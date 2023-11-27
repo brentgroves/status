@@ -11,10 +11,23 @@ I hope your Thanksgiving holiday was enjoyable and relaxing!  Mine was good but 
 Brent
 260-564-4868
 
+## Monitoring is a key pillar of DevOps best practices
+
+to ensure performance and health. In a distributed environment such as Kubernetes and microservices, it is even more true. This tutorial shows you how to build effectively a modern monitoring stack with Prometheus & Grafana on Kubernetes.
+
+Monitoring is a key pillar of DevOps best practices. This gives vital information on the performance and health of a platform. In a distributed environment such as Kubernetes and microservices, it is even more true.
+
+One of the great strengths of Kubernetes is the ability to scale your services and applications. When you reach thousand of applications, monitoring them manually or using scripts is not viable. You need to adopt a monitoring system that scales too! That's where Prometheus and Grafana come into the scene.
+
+Prometheus will collect, store and allow you to leverage your platform metrics. On the other hand, Grafana will plug into Prometheus and allow you to create beautiful dashboards and charts.
+
+Today, we'll go over what Prometheus is and the best way to deploy it on Kubernetes: using the operator. We'll see how to set up a monitoring platform with Prometheus and Grafana.
+
+This tutorial will give you a good starting point with observability and go further!
 
 ## Time Series Analysis
 
-https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm
+<https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm>
 
 Time series data often arise when monitoring industrial processes or tracking corporate business metrics. The essential difference between modeling data via time series methods or using the process monitoring methods discussed earlier in this chapter is the following:
 
