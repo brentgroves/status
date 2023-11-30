@@ -44,6 +44,17 @@ Usages:
 
 ![dashboard](../../linux/grafana/dashboard.png)
 
+## **[Grafana vs Power BI](https://www.metricfire.com/blog/grafana-vs-power-bi/)**
+
+Grafana vs. Power BI – This is often a confusing decision for people wanting to select a data visualization and analytics tool with visually appealing and interactive insights. In this article, we highlight the features and benefits of both tools —Grafana and Power BI, bringing out their key differences to help you make a better decision.
+
+Key Takeaways
+
+- Grafana is adaptable for monitoring data from other application monitoring tools and offers scalability and affordability.
+- Power BI is great for analyzing data from various sources but is more focused on business intelligence.
+- Grafana is ideal for metric consolidation and monitoring, making it an affordable and easy-to-maintain solution for various data sources.
+- Power BI is well-suited for business analytics, but it has limitations regarding data source integration and is primarily focused on business intelligence.
+
 ## Comparing next record to previous record
 
 <https://www.scaler.com/topics/lag-function-in-sql/#:~:text=In%20SQL%20Server%20(Transact%2DSQL,making%20it%20easier%20to%20compare>.
