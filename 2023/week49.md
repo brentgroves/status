@@ -38,6 +38,12 @@ Usages:
 
 <https://andykuszyk.github.io/2020-07-24-prometheus-histograms.html>
 
+## Use grafana with a **[mysql](https://www.techrepublic.com/article/how-to-connect-grafana-to-a-remote-mysql-database/)** data source
+
+## Grafana Prometheus **[tutorial](https://youtu.be/EGgtJUjky8w)**
+
+![dashboard](../../linux/grafana/dashboard.png)
+
 ## Comparing next record to previous record
 
 <https://www.scaler.com/topics/lag-function-in-sql/#:~:text=In%20SQL%20Server%20(Transact%2DSQL,making%20it%20easier%20to%20compare>.
