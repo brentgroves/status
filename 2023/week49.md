@@ -10,6 +10,8 @@ Notes from this meeting will be located at: ~/src/repsys/status/2023/week49.md
 It can be viewed by logging into devcon2 as bcieslik,bcook,sjackson,cstangland,jdavis,or kyoung with password k8sAdmin1! and opening week49.md from visual studio code and pressing shift-ctrl-v
 To get a fresh copy please run ~/freshstart.sh at a command prompt.
 
+## **[Backup and Restore a Prometheus](https://devopstales.github.io/kubernetes/backup-and-retore-prometheus/)**
+
 ## **[Time Series Analysis](../../linux/time-series-analysis/time-series-analysis.md)**
 
 Time series data often arise when monitoring industrial processes or tracking corporate business metrics. The essential difference between modeling data via time series methods or using the process monitoring methods discussed earlier in this chapter is the following:
