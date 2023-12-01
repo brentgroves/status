@@ -59,6 +59,9 @@ Data collection techniques for time series analysis:
 
 ## **[Grafana vs Power BI](https://www.metricfire.com/blog/grafana-vs-power-bi/)**
 
+- Use Grafana for time series databases - PromQL time-series language
+- Use Power BI for SQL databases - TSQL for SQL databases
+
 Grafana vs. Power BI – This is often a confusing decision for people wanting to select a data visualization and analytics tool with visually appealing and interactive insights. In this article, we highlight the features and benefits of both tools —Grafana and Power BI, bringing out their key differences to help you make a better decision.
 
 Key Takeaways
