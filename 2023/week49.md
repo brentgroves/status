@@ -10,6 +10,13 @@ Notes from this meeting will be located at: ~/src/repsys/status/2023/week49.md
 It can be viewed by logging into devcon2 as bcieslik,bcook,sjackson,cstangland,jdavis,or kyoung with password k8sAdmin1! and opening week49.md from visual studio code and pressing shift-ctrl-v
 To get a fresh copy please run ~/freshstart.sh at a command prompt.
 
+## Go Web-Hook
+
+## What is **[webhook](https://github.com/adnanh/webhook)**
+
+webhook is a lightweight configurable tool written in Go, that allows you to easily create HTTP endpoints (hooks) on your server, which you can use to execute configured commands. You can also pass data from the HTTP request (such as headers, payload or query variables) to your commands. webhook also allows you to specify rules which have to be satisfied in order for the hook to be triggered.
+
+
 ## A self join **[example](../../volumes/sql/examples/mssql/self_join.md)**
 
 ## **[Backup and Restore a Prometheus](https://devopstales.github.io/kubernetes/backup-and-retore-prometheus/)**
