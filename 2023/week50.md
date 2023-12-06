@@ -1,6 +1,10 @@
 # Father's direction
 
-Do not worry my son I am with you always.  If you keep speaking to me I will guide you in what to say and do.  In this way you will learn much about getting along with people and we can enjoy each others company.  I love you and have a plan for you that we can enjoy together.  Yes there will be problems but if you stay in tune with me through them the bond between us will growing stronger and your hope in me will see you through.  
+Do not worry my son I am with you always.  If you keep speaking to me I will guide you in what to say and do.  In this way you will learn much about getting along with people and we can enjoy each others company.  I love you and have a plan for you in which we can enjoy spending time together.  Yes there will be problems but if you stay in tune with me then through them the bond between us will continue growing stronger and your hope in me will see you through anything.  
+
+## Start here
+
+<https://stackoverflow.com/questions/45751608/why-is-http-client-prefixed-with>
 
 ## Time Series Analysis
 
