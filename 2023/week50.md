@@ -4,7 +4,17 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 
 ## Time Series Analysis
 
-- **[Smoothing Techniques](../../linux/time-series-analysis/smoothing-techniques.md)**
+- **[What is a moving average, MA](../../linux/time-series-analysis/smoothing-techniques.md)**
+
+- **[Double Moving Averages for a Linear Trend Process](./exponential_smoothing.md)**
+
+Unfortunately, neither the mean of all data nor the moving average of the most recent M values, when used as forecasts for the next period, are able to cope with a significant trend.
+
+There exists a variation on the MA procedure that often does a better job of handling trend. It is called Double Moving Averages for a  Linear Trend Process. It calculates a second moving average from the original moving average, using the same value for M. As soon as both single and double moving averages are available, a computer routine uses these averages to compute a slope and intercept, and then forecasts one or more periods ahead.
+
+**[MA Calculator](https://mathcracker.com/moving-average-forecast-calculator)**
+
+**[Double MA Tutorial](https://medium.com/@polanitzer/time-series-methodologies-part-3-double-moving-average-6aba4a5fbb7e)**
 
 ## Alert Manager
 
