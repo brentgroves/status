@@ -14,6 +14,10 @@ Add Kevin Proxmox
 
 <https://stackoverflow.com/questions/45751608/why-is-http-client-prefixed-with>
 
+## Gage report and plex admin, Intelliplex, or SQL tech share from anyone
+
+- Plex admin, Intelliplex, or SQL tech share from anyone
+
 ## Time Series Analysis
 
 - **[What is a moving average, MA](../../linux/time-series-analysis/smoothing-techniques.md)**
