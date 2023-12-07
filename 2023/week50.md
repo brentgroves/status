@@ -6,10 +6,12 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 
 <https://go.dev/tour/flowcontrol/1>
 
+**[webhook tutorial](../../volumes/go/tutorials/webhook/webhook.md)**
+
 Add Brad rank function
 Add Kevin Proxmox
 
-## Report System and Group Tech Share
+## Report System and Tech Share
 
 - Install Prometheus and Grafana with example
 - Share anything group might find interesting.
@@ -66,6 +68,13 @@ func printNumber(number int) {
 ```
 
 This code will spawn 10,000 goroutines to print numbers concurrently.
+
+## The architecture of the report system
+
+The architecture of the solution is almost the same as this Payment Gateway:
+
+We have an API that acts as a Payment Gateway. A request on the endpoint of this API will return a payload but this payload is also sent through a Redis channel called payments. Thus all services listening to this channel will receive the data sent.
+We then have the webhook service written in Golang. This service listens to the payments Redis channel. If data is received, the payload is formatted to be sent to the URL indicated on the payload. If the request fails due to timeout or any other errors, there is a retry mechanism using Golang channel queuing and exponential backoff to retry the request.
 
 ## Report System Architecture
 
