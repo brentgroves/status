@@ -4,8 +4,10 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 
 ## Start here
 
+<https://go.dev/tour/flowcontrol/1>
+
 Add Brad rank function
-Add Kevin Proxmox 
+Add Kevin Proxmox
 
 ## Report System and Group Tech Share
 
