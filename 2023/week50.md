@@ -4,6 +4,14 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 
 ## Start here
 
+Add Brad rank function
+Add Kevin Proxmox 
+
+## Report System and Group Tech Share
+
+- Install Prometheus and Grafana with example
+- Share anything group might find interesting.
+
 <https://stackoverflow.com/questions/45751608/why-is-http-client-prefixed-with>
 
 ## Time Series Analysis
