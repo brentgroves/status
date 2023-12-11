@@ -8,13 +8,18 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 
 **[webhook tutorial](../../volumes/go/tutorials/webhook/webhook.md)**
 
-Add Brad rank function
-Add Kevin Proxmox
+Good morning dear ones,
+
+I hope you and your loved ones are staying healthy during this cold season!  It is a privilege to work with each one of you :-) As always please feel free to get in touch with me about anything at home or at work.
+
+-Sincerely yours,
+Brent
+260-564-4868
 
 - Plan to work on the gage_record view self-join next 
-- Working on the webhook system for the report requestor.
+- Work on the webhook system for the report requestor.
 - Switched from a database to using redis for communication between the report reqestor and runner.
-- Came across Multipass and JuJu/charms that can be used to manage the life-cycle of VMs and applications the same on a variety of cloud providers.
+- Came across Multipass and JuJu/charms that can be used to manage the life-cycle of VMs and applications identically on a variety of cloud providers.
 
 ## Multipass
 
