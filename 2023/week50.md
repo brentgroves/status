@@ -1,6 +1,6 @@
 # Father's direction
 
-Do not worry my son I am with you always.  If you keep speaking to me I will guide you in what to say and do.  In this way you will learn much about getting along with people and we can enjoy each others company.  I love you and have a plan for you in which we can enjoy spending time together.  Yes there will be problems but if you stay in tune with me then through them the bond between us will continue growing stronger and your hope in me will see you through anything.  
+Do not worry my son I am with you always.  If you keep speaking to me I will guide you in what to say and do.  In this way you will learn much about getting along with people and we can enjoy each others company.  I love you and have a plan for you in which we can enjoy spending time together.  Yes there will be problems but if you stay in tune with me then through each hardship the bond between us will continue growing stronger and your hope in me will see you through anything and everything.  
 
 ## Start here
 
@@ -8,8 +8,17 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 
 **[webhook tutorial](../../volumes/go/tutorials/webhook/webhook.md)**
 
+**[gage report](../../volumes/sql/gages/gage_cali_next_calibration.sql)**
+
+What services through Azure DW, AKS, SMTP server, or Azure Portal access to send email.
+
+Tuition Assistance.
+
+Returning students for the elderly.
+
+Days off:
+
 Add Brad rank function
-Add Kevin Proxmox
 
 ## Report System and Tech Share
 
