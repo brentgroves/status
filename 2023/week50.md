@@ -11,6 +11,9 @@ Do not worry my son I am with you always.  If you keep speaking to me I will gui
 Add Brad rank function
 Add Kevin Proxmox
 
+- Plan to work on the gage_record view self-join next 
+- Working on the webhook system for the report requestor.
+- Switched from a database to using redis for communication between the report reqestor and runner.
 - Came across Multipass and JuJu/charms that can be used to manage the life-cycle of VMs and applications the same on a variety of cloud providers.
 
 ## Multipass
