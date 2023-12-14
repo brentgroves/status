@@ -5,7 +5,41 @@ I love you my son and nothing is going to change that.  Remember that nothing th
 - Love
 Dad
 
-Hi Renee,
+## Continue R tutorial
 
-I hope you are doing well and are enjoying your work!  Does Linamar offer a tuition assistance program for old men who would enjoy going back to school :-)
+launch R Studio using compose
 
+```bash
+pushd .
+cd ~/src/repsys/docker/r
+docker compose up
+
+```
+
+**[R Tutorial](../../docker/r/tutorial.md)**
+
+## IaaS
+
+<https://kumul.us/what-is-openstack/>
+
+OpenStack® is an open source software platform for private clouds and public clouds. As an Infrastructure as a Service (IaaS) platform, OpenStack enables companies to easily and efficiently add servers, storage and networking components to their cloud.
+
+## PaaS
+
+<https://www.redhat.com/en/topics/cloud-computing/what-is-paas>
+
+Platform-as-a-service (PaaS) is a form of cloud computing where an application software platform is provided by another party. Primarily for developers and programmers, a PaaS allows the user to develop, run, and manage their own apps without having to build and maintain the infrastructure or platform usually associated with the process.
+
+PaaS platforms can run in the cloud or on on-premise infrastructure. For managed offerings, a PaaS provider hosts the hardware and software on its own infrastructure and delivers this platform to the user as an integrated solution, solution stack, or service through an internet connection.
+
+For cloud-native development use cases, a Kubernetes-based PaaS can function as the platform on which container-based applications can run, scale, and be managed. For example, the cloud services editions of Red Hat® OpenShift®  are managed PaaS offerings.
+
+## What is a Kubernetes PaaS?
+
+<https://platform9.com/blog/kubernetes-paas-or-not-to-paas/>
+
+In relation to Kubernetes, a PaaS would provide a simple way for developers to deploy containerized applications; point, click done.
+
+In reality, a PaaS for Kubernetes would need to expose the secret sauce of Kubernetes in a simple way with a seamless deployment mechanism. Before jumping into the PaaS debate, it’s worth asking, is Kubernetes already a PaaS?
+
+If we agree that it is not, then the challenge, or maybe the expectation, is presented well by Janakiram MSV in his blog on Kubernetes and PaaS
