@@ -9,6 +9,18 @@ Dad
 
 Work on the **[webhooks](../../volumes/go/tutorials/webhook/webhook.md)** tutorial.
 
+## Is IntelliPlex/Web Focus designed for data science tasks?
+
+When you study data science the following software is mentioned alot:
+
+Minitab, SPSS, PowerBI, R, Python
+
+In traditional reporting managers look at dashboards to get an overview of the business.
+
+In data science time series data is collected to make forcasts and answer questions.
+
+We all have seen traditional dashboards so let's instead look at an example of how to use data science software.
+ 
 ## Continue R tutorial
 
 launch R Studio using compose
