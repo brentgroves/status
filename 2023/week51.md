@@ -4,6 +4,13 @@ I love you my son and nothing is going to change that.  Remember that nothing th
 
 - Love
 Dad
+Good morning dear ones,
+
+I hope you and your families are staying fit and healthy my friends!  It's a winter wonderland in little old Wolf lake today :-) As always please feel free to contact me anytime for anything!
+
+-Sincerely yours,
+Brent
+260-564-4868
 
 ## Prepare for repsys meeting
 
