@@ -32,3 +32,9 @@ The best of both worlds. It combines the best of OpenID authentication with OAut
 - API Gateway provides a centralized authentication/authorization, throttling, and loadbalancing for all microservices.
 - Combine K8s Ingress Controller with an API Gateway features with many API Gateway products including the most prevalant Kong.
 
+## Storage Solution
+
+Provide both replication and horizontal scaling with any of several distributed storage clusters such as:
+
+- Minio S3 compatible object storage
+- Ceph is a free and open-source software-defined storage platform that provides object storage, block storage, and file storage built on a common distributed cluster foundation.
