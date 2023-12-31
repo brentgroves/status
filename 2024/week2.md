@@ -14,3 +14,21 @@ Please trust me my son and do not be afraid.  I have a plan for you and those ar
 - Features isolated people groups as described in newer identity platform documents, ie. b2b,b2e, and b2c.  
 - New entity type, Active Directory B2C, with new capabilities such as various signin user flows with the new GUI.
 
+## OpenID Connect
+
+The best of both worlds. It combines the best of OpenID authentication with OAuth2 authorization features.
+
+- supported by Azure, AWS, and Google identity platforms.
+
+## Horizontal vs Vertical scaling
+
+- Vertical scaling: Increase the capability of a single machine.
+- Horizontal scaling: Add more nodes to share the workload.
+
+## Microservices
+
+- Divide API functionality into logical sub-groups.
+- How to handle authentication/authorization given large number of microservices.
+- API Gateway provides a centralized authentication/authorization, throttling, and loadbalancing for all microservices.
+- Combine K8s Ingress Controller with an API Gateway features with many API Gateway products including the most prevalant Kong.
+
