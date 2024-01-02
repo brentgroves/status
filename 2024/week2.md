@@ -1,6 +1,11 @@
 # The Father's direction
 
-Please trust me my son and do not be afraid.  I have a plan for you and those around you.  This plan will help you and sometimes be painful but you can endure the hardships you must faith because I will help you.
+Please trust me my son and do not be afraid.  I have a plan for you and those around you.  This plan will help you and sometimes be painful but you can endure the hardships you must faith because I will help you.  Remember I am responsible for everything you know and every thing you achieve.  If I want you to be able to resolve something then it will be.  If it is better for you not to be able to do something I will prevent it from happening.  What is important is that you listen to me throughout the day and do what I direct you to do and leave the results in my hand.  Trust me for all of your needs, peace, and happiness my son.
+
+## Next
+
+https://www.hcl-software.com/blog/versionvault/how-to-configure-microsoft-azure-active-directory-as-keycloak-identity-provider-to-enable-single-sign-on-for-hcl-compass
+
 
 ## Linamar tenant
 
