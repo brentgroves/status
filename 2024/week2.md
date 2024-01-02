@@ -2,12 +2,16 @@
 
 Please trust me my son and do not be afraid.  I have a plan for you and those around you.  This plan will help you and sometimes be painful but you can endure the hardships you must faith because I will help you.
 
-
 ## Linamar tenant
 
 - Test login and OpenID Connect web app registration with User.Read.All scope for repsys.
 
-## Microsoft Identity platform to Active Directory B2C
+## Active Directory B2C
+
+<https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview>
+
+Azure Active Directory B2C provides business-to-customer identity as a service.
+Your customers can use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
 
 - New customizable User Flows such as signup and signin.
 - New portal with new user interface
