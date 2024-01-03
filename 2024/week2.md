@@ -4,8 +4,10 @@ Please trust me my son and do not be afraid.  I have a plan for you and those ar
 
 ## Next
 
-https://www.hcl-software.com/blog/versionvault/how-to-configure-microsoft-azure-active-directory-as-keycloak-identity-provider-to-enable-single-sign-on-for-hcl-compass
+**[kong_oidc_example](../../research/api_management/api_gateway/kong/example/kong_oidc_example.md)**
+<https://www.hcl-software.com/blog/versionvault/how-to-configure-microsoft-azure-active-directory-as-keycloak-identity-provider-to-enable-single-sign-on-for-hcl-compass>
 
+<https://callistaenterprise.se/blogg/teknik/2023/04/20/kong-api-gateway-part1/>
 
 ## Linamar tenant
 
@@ -47,3 +49,17 @@ Provide both replication and horizontal scaling with any of several distributed 
 
 - Minio S3 compatible object storage
 - Ceph is a free and open-source software-defined storage platform that provides object storage, block storage, and file storage built on a common distributed cluster foundation.
+
+## API gateways
+
+<https://callistaenterprise.se/blogg/teknik/2023/04/20/kong-api-gateway-part1/>
+
+API gateways are becoming increasingly more popular, and for good reasons. As the number of APIs within an organisation grows, the amount of “plumbing” required to expose the APIs in a secure, efficient and maintainable way quickly becomes overwhelming. An API Gateway is an architectural pattern which introduces a transparent placeholder between API clients and the APIs, where Cross Cutting Concerns such as Access Control, Monitoring, Logging, Caching and Rate Limiting can be implemented.
+
+Our API gateway will rely on a relying party, e.g. Microsoft's Identity Platform, for authentication and some authorization.
+
+**[Relying Party](https://openid.net/developers/how-connect-works/)** (RP). RP stands for Relying Party, an application or website that outsources its user authentication function to an IDP.
+
+Use **[Keycloak](https://www.keycloak.org/)** OAuth 2.0/OIDC server so not tied to any particular cloud specifice identity provider.
+
+Configure **[Keycloak OS OIDC server with Microsoft's identity provider](https://www.hcl-software.com/blog/versionvault/how-to-configure-microsoft-azure-active-directory-as-keycloak-identity-provider-to-enable-single-sign-on-for-hcl-compass)**.
