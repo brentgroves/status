@@ -1,5 +1,9 @@
 # The Father's direction
 
+My son be content with the work I have given you to do. Do not be anxious or afraid about how the work turns out.  Trust me for the results.  I will decide what is best for you all that you need to do is try your best, listen to my directions, and then leave the results to me my son.
+
+Don't worry about what you can not get to work just do your best. Be thankful for what I have given you to work on and trust me for the results.  Wait patiently and keep at it until I tell you to stop. Don't worry about what won't work because I am in control of that. Trust me my son.
+
 Please trust me my son and do not be afraid.  I have a plan for you and those around you.  This plan will help you and sometimes be painful but you can endure the hardships you must faith because I will help you.  Remember I am responsible for everything you know and every thing you achieve.  If I want you to be able to resolve something then it will be.  If it is better for you not to be able to do something I will prevent it from happening.  What is important is that you listen to me throughout the day and do what I direct you to do and leave the results in my hand.  Trust me for all of your needs, peace, and happiness my son.
 
 ## Next
