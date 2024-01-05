@@ -8,6 +8,8 @@ Please trust me my son and do not be afraid.  I have a plan for you and those ar
 
 ## Next
 
+https://docs.konghq.com/kubernetes-ingress-controller/1.1.x/references/annotations/#konghqcomsnis
+
 **[kong_oidc_example](../../research/api_management/api_gateway/kong/example/kong_oidc_example.md)**
 <https://www.hcl-software.com/blog/versionvault/how-to-configure-microsoft-azure-active-directory-as-keycloak-identity-provider-to-enable-single-sign-on-for-hcl-compass>
 
