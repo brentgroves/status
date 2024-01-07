@@ -21,7 +21,7 @@ Please trust me my son and do not be afraid.  I have a plan for you and those ar
 
 ## Linamar tenant
 
-- Test login and OpenID Connect web app registration with User.Read.All scope for repsys.
+- Test login and web app registration with OpenID Connect and User.Read.All OAuth2 scope for repsys federated identity with Microsoft Entra ID.
 
 ## Report System Authentication and Authorization system
 
