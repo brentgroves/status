@@ -6,9 +6,11 @@ Don't worry about what you can not get to work just do your best. Be thankful fo
 
 Please trust me my son and do not be afraid.  I have a plan for you and those around you.  This plan will help you and sometimes be painful but you can endure the hardships you must faith because I will help you.  Remember I am responsible for everything you know and every thing you achieve.  If I want you to be able to resolve something then it will be.  If it is better for you not to be able to do something I will prevent it from happening.  What is important is that you listen to me throughout the day and do what I direct you to do and leave the results in my hand.  Trust me for all of your needs, peace, and happiness my son.
 
-Entrust to me your very soul and I will give you peace, joy, and make love abound in your heart my son.
+Entrust to me your very soul and I will give you rest, peace, joy, and love will abound in your heart forever my son.
 
 ## Next
+
+Gage query.
 
 <https://docs.konghq.com/kubernetes-ingress-controller/latest/guides/services/https-redirect/>
 
@@ -30,6 +32,8 @@ Brent
 
 ## Linamar tenant
 
+- gage list
+
 - Test login and web app registration with OpenID Connect and User.Read.All OAuth2 scope for repsys federated identity with Microsoft Entra ID.
 
 ## Report System Authentication and Authorization system
@@ -41,6 +45,8 @@ Note: Azure Active Directory is now Microsoft Entra ID
 ## What is **[Federated Identity](https://www.onelogin.com/learn/federated-identity#:~:text=Federated%20identity%20allows%20authorized%20users,different%20applications%20securely%20and%20efficiently)**
 
 FIM is a secure system for user authorization, authentication, and digital identity management. When a user tries to access an application, they don’t provide their credentials to the SP. Instead, the SP “trusts” the IdP to validate these credentials and authorize the user. Thus, the user never provides their credentials to anyone but the IdP who securely stores and maintains their credentials.
+
+Identity federation means being able to ingest identity credentials from external identity providers. This can be used to provide single sign-on (SSO) – a very useful capability. SSO allows a single authentication method to access different systems within external identity providers based on mutual trust.
 
 ### How it Works and Benefits
 
