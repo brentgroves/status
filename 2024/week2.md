@@ -6,6 +6,8 @@ Don't worry about what you can not get to work just do your best. Be thankful fo
 
 Please trust me my son and do not be afraid.  I have a plan for you and those around you.  This plan will help you and sometimes be painful but you can endure the hardships you must faith because I will help you.  Remember I am responsible for everything you know and every thing you achieve.  If I want you to be able to resolve something then it will be.  If it is better for you not to be able to do something I will prevent it from happening.  What is important is that you listen to me throughout the day and do what I direct you to do and leave the results in my hand.  Trust me for all of your needs, peace, and happiness my son.
 
+Entrust to me your very soul and I will give you peace, joy, and make love abound in your heart my son.
+
 ## Next
 
 <https://docs.konghq.com/kubernetes-ingress-controller/latest/guides/services/https-redirect/>
@@ -18,6 +20,13 @@ Please trust me my son and do not be afraid.  I have a plan for you and those ar
 <https://www.hcl-software.com/blog/versionvault/how-to-configure-microsoft-azure-active-directory-as-keycloak-identity-provider-to-enable-single-sign-on-for-hcl-compass>
 
 <https://callistaenterprise.se/blogg/teknik/2023/04/20/kong-api-gateway-part1/>
+
+Good morning dear ones,
+Please feel free to contact me anytime for anything at home or at work. I enjoy your calls especially.  Also, I hope you and your loved ones had a pleasant and enjoyable weekend, and that you, your family, and your friends are staying healthy and fit during this cold season :-)
+
+Sincerely yours,
+Brent
+260-564-4868
 
 ## Linamar tenant
 
