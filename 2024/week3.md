@@ -18,13 +18,18 @@ Problems in new account part of code.
 
 OpenStack is a an open source cloud operating system managing compute, storage, and networking resources throughout a datacenter using APIs.
 
+![](https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/openstack-logo/2016R/OpenStack-Logo-Horizontal.SVG)
+![](https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/learn/homepage-OpenStack-SFAs.svg)
+
+![](https://docs.openstack.org/install-guide/_images/openstack_kilo_conceptual_arch.png)
+
 **[OpenStack](https://en.wikipedia.org/wiki/OpenStack)** is a free, open standard cloud computing platform. It is mostly deployed as infrastructure-as-a-service in both public and private clouds where virtual servers and other resources are made available to users.
 
 ## Open Stack History
 
-https://docs.openstack.org/project-team-guide/introduction.html
+<https://docs.openstack.org/project-team-guide/introduction.html>
 
-https://fedscoop.com/agencies-open-up-to-openstack/
+<https://fedscoop.com/agencies-open-up-to-openstack/>
 
 Three out of four government IT professionals in a new poll say their agencies are now using cloud computing services. The new survey also found that a significant portion of the respondents have favorable perceptions about the cost, security and ease of deploying the popular open source software platform, OpenStack, for their on-premises cloud computing initiatives.
 
