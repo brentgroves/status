@@ -10,6 +10,14 @@ gage query
 <https://gateway-api.sigs.k8s.io/guides/http-routing/>
 <https://gateway-api.sigs.k8s.io/#whats-the-difference-between-gateway-api-and-an-api-gateway>
 
+Good morning dear ones,
+
+I hope that you are enduring the harsh weather my friends, and that you and your loved ones are staying healthy and warm!  As always please feel free to contact me at home or at work concerning anything at all :-)
+
+Sincerely yours,
+Brent
+260-564-4868
+
 ## Trial Balance
 
 There was a bug in Plex.account_period_balance_recreate_period_range and Plex.account_period_balance_recreate_open_period_range having to do with a new account being added with debit and credit balances in December and January.
