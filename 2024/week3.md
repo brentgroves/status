@@ -10,14 +10,6 @@ gage query
 <https://gateway-api.sigs.k8s.io/guides/http-routing/>
 <https://gateway-api.sigs.k8s.io/#whats-the-difference-between-gateway-api-and-an-api-gateway>
 
-Good morning dear ones,
-
-I hope that you are enduring the harsh weather my friends, and that you and your loved ones are staying healthy and warm!  As always please feel free to contact me at home or at work concerning anything at all :-)
-
-Sincerely yours,
-Brent
-260-564-4868
-
 ## Trial Balance
 
 There was a bug in Plex.account_period_balance_recreate_period_range and Plex.account_period_balance_recreate_open_period_range having to do with a new account being added with debit and credit balances in December and January.
@@ -75,7 +67,7 @@ There are only two versions: SOCKS4 and SOCKs5. The main differences between SOC
 I do not believe Azure Bastion is a **[SOCKs5 proxy server](https://securityintelligence.com/posts/socks-proxy-primer-what-is-socks5-and-why-should-you-use-it/)** which we could use to create a secure TCP connection to our API Gateway. Instead, it is only usable to create a secure RDP/SSH connection to an on-premise server.
 
 
-Is our Bastion host configured to provide SSH tunneling (Dynamic Port Forwarding) from an Azure Public IP to a VM or computer within our companies network, remote port forwarding, taking care of TLS termination?
+Is our Bastion host configured to provide SSH tunneling (Dynamic Port Forwarding) from an Azure Public IP to a VM or computer within our company's network, remote port forwarding, taking care of TLS termination?
 
 ![](https://learn.microsoft.com/en-us/azure/bastion/media/connect-ip-address/ip-address.png)
 
@@ -85,11 +77,11 @@ Is our Bastion host configured to provide SSH tunneling (Dynamic Port Forwarding
 
 Instead of logging in through the Azure Portal, Azure Bastion now allows users to connect using their native RDP or SSH clients.
 
-If so I believe Bastion can be setup to route traffic to our K8s hosted API gateway which has it's own routing, throttling, TLS termination, and IAM authentication and authorization scheme.
+If so I believe Bastion can be setup to route traffic to our K8s-hosted API gateway which has its own routing, throttling, TLS termination, and IAM authentication and authorization scheme.
 
 If TLS termination is done by our Bastion host then we will probably need to pay for a Public IP and a TLS certificate. Once this is done I believe we will be able to access our data warehouse reporting UI and micro-services from a Microsoft Teams reporting app.
 
-Azure Bastion is a fully managed PaaS service that you provision to securely connect to virtual machines via private IP address. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly over TLS from the Azure portal, or via the native SSH or RDP client already installed on your local computer. When you connect via Azure Bastion, your virtual machines don't need a public IP address, agent, or special client software.
+Azure Bastion is a fully managed PaaS service that you provision to securely connect to virtual machines via a private IP address. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly over TLS from the Azure portal, or via the native SSH or RDP client already installed on your local computer. When you connect via Azure Bastion, your virtual machines don't need a public IP address, agent, or special client software.
 
 Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network for which it's provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world, while still providing secure access using RDP/SSH.
 
@@ -99,7 +91,7 @@ The following diagram shows connections to virtual machines via a Bastion deploy
 
 ## What is **[OpenStack](https://www.openstack.org/software/)**
 
-OpenStack is a an open source cloud operating system managing compute, storage, and networking resources throughout a datacenter using APIs.
+OpenStack is an open-source cloud operating system managing computing, storage, and networking resources throughout a data center using APIs.
 
 ![](https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/openstack-logo/2016R/OpenStack-Logo-Horizontal.SVG)
 ![](https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/learn/homepage-OpenStack-SFAs.svg)
@@ -114,13 +106,13 @@ OpenStack is a an open source cloud operating system managing compute, storage, 
 
 <https://fedscoop.com/agencies-open-up-to-openstack/>
 
-Three out of four government IT professionals in a new poll say their agencies are now using cloud computing services. The new survey also found that a significant portion of the respondents have favorable perceptions about the cost, security and ease of deploying the popular open source software platform, OpenStack, for their on-premises cloud computing initiatives.
+Three out of four government IT professionals in a new poll say their agencies are now using cloud computing services. The new survey also found that a significant portion of the respondents have favorable perceptions about the cost, security, and ease of deploying the popular open-source software platform, OpenStack, for their on-premises cloud computing initiatives.
 
 How Governments Use **[OpenStack](https://vexxhost.com/blog/how-governments-use-openstack-around-the-world/
 )
-Governments all over the world have important priorities. Keep their citizens safe, keep law and order within their jurisdiction, and problem solve any issues that arise are just some of the issues that they face on a day to day basis. Although the way that they govern their countries the following countries have one thing in common: OpenStack.
+Governments all over the world have important priorities. Keep their citizens safe, keeping law and order within their jurisdiction, and problem-solving any issues that arise are just some of the issues that they face on a day-to-day basis. Although the way that they govern their countries the following countries have one thing in common: OpenStack.
 
 **The United States Of America**
-In the United States, the National Security Agency (NSA) utilizes the power of OpenStack to keep abreast of the high-security needs of the country. The implementation of OpenStack at the governmental level was such a success that the NSA plan on implementing OpenStack to all 16 agencies that make up the intelligence community in the United States. Considering the emphasis that the United States place on security, it is evident that OpenStack delivers where it matters most.
+In the United States, the National Security Agency (NSA) utilizes the power of OpenStack to keep abreast of the high-security needs of the country. The implementation of OpenStack at the governmental level was such a success that the NSA planned to implement OpenStack in all 16 agencies that make up the intelligence community in the United States. Considering the emphasis that the United States places on security, it is evident that OpenStack delivers where it matters most.
 
-Moreover, the role of OpenStack in government security for the United States is good for OpenStack users. Why? Because the NSA has such strong security requirements, it developed systems to accommodate these requirements. From securing APIs and guest OSes to developing code to suit their needs, the OpenStack community can experience the security benefits for themselves.
+Moreover, the role of OpenStack in government security in the United States is good for OpenStack users. Why? Because the NSA has such strong security requirements, it developed systems to accommodate these requirements. From securing APIs and guest OSes to developing code to suit their needs, the OpenStack community can experience the security benefits themselves.
