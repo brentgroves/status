@@ -16,7 +16,7 @@ There was a bug in Plex.account_period_balance_recreate_period_range and Plex.ac
 
 - changed mssql code first
 - changing mysql code next
-- review code change
+- review **[code change](../../volumes/sql/tbsql/issues/new_account/account_period_balance_recreate_period_range/mssql/recreate_fix.sql)**
 - talk about SQL debugging in MSSQL, MySQL, and PostgreSQL
 
 ## Azure Summary
@@ -65,7 +65,6 @@ There are only two versions: SOCKS4 and SOCKs5. The main differences between SOC
 ## What is Azure Bastion?
 
 I do not believe Azure Bastion is a **[SOCKs5 proxy server](https://securityintelligence.com/posts/socks-proxy-primer-what-is-socks5-and-why-should-you-use-it/)** which we could use to create a secure TCP connection to our API Gateway. Instead, it is only usable to create a secure RDP/SSH connection to an on-premise server.
-
 
 Is our Bastion host configured to provide SSH tunneling (Dynamic Port Forwarding) from an Azure Public IP to a VM or computer within our company's network, remote port forwarding, taking care of TLS termination?
 
