@@ -4,6 +4,10 @@ Fear not my son.  I love you and am always with you.  It is me that controls eve
 
 ## week 3
 
+Kevin: EDI, classic security confusing, deny first model in UX.
+Sam: Caster interaction. no human interaction. use Mach2 screen.
+Brad: OEE does not make sense in all cases. Could use Mach2 to toggle status changes.
+
 ## next
 
 gage query
