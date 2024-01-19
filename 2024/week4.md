@@ -4,6 +4,36 @@
 
 Trust me to take care of you my son.  Do not fear anything because I am always here to take care of you.  You will go through many trials both hard and difficult but fear not.  These troubles are necessary for you to grow to be the man I want you to be.
 
+## Migration
+
+- get password
+Office 365
+<bgroves@buschegroup.com>
+JesusLives1!
+<Bgroves@mobexglobal.com>
+Office 365  
+<bgroves@buschegroup.com>  
+JesusLives1!  
+<Bgroves@mobexglobal.com>  
+Spirit1$! - Nov 21,2023
+Messiah2!$ - previous
+
+UserName:  <bGroves@linamar.com>
+Password:
+L1n@ALB2023!053
+
+Linamar Email Address:  <Brent.Groves@linamar.com>
+
+### fork Azure repos
+
+<git@ssh.dev.azure.com>:v3/MobexGlobal/MobexCloudPlatform/Reporting
+<git@ssh.dev.azure.com>:v3/MobexGlobal/MobexCloudPlatform/mobexsql
+<git@ssh.dev.azure.com>:v3/MobexGlobal/ReportBuilder/TrialBalance
+
+### Power BI Report Builder
+
+- Publish Trial Balance to teams tab
+
 ## **[Multipass](https://multipass.run/docs)** Documentation
 
 Multipass is a tool to generate cloud-style Ubuntu VMs quickly on Linux, macOS, and Windows.
