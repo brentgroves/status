@@ -26,9 +26,21 @@ Linamar Email Address:  <Brent.Groves@linamar.com>
 
 ### fork Azure repos
 
-<git@ssh.dev.azure.com>:v3/MobexGlobal/MobexCloudPlatform/Reporting
-<git@ssh.dev.azure.com>:v3/MobexGlobal/MobexCloudPlatform/mobexsql
-<git@ssh.dev.azure.com>:v3/MobexGlobal/ReportBuilder/TrialBalance
+```bash
+git@ssh.dev.azure.com:v3/MobexGlobal/MobexCloudPlatform/Reporting
+git@ssh.dev.azure.com:v3/MobexGlobal/MobexCloudPlatform/mobexsql
+git@ssh.dev.azure.com:v3/MobexGlobal/ReportBuilder/TrialBalance
+trial_balance_powerbi
+```
+
+### Update git scripts
+
+- startday-old.sh
+- pull new repos to dev machines
+
+### PowerBI
+
+- License of PowerBI and PowerBI paginated reports
 
 ### Power BI Report Builder
 
