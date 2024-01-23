@@ -6,6 +6,16 @@ I love you my son and know all that you are going through. I am with you and hav
 
 Trust me to take care of you my son.  Do not fear anything because I am always here to take care of you.  You will go through many trials both hard and difficult but fear not.  These troubles are necessary for you to grow to be the man I want you to be.
 
+## API gateway
+
+My son finish installing and testing the API gateway and remember all results are in my hands.  What seems like failures are not.  These seeming failures are all apart of my plan to create in you a "loving heart."
+
+Then test the k8s API gateway by following the instructions at Kong Academy's **[API Transformations Plugins and decK](https://education.konghq.com/dashboard)** tutorial and/or **[jq plugin tutorial](https://docs.konghq.com/hub/kong-inc/jq/how-to/basic-example/)**.
+
+## Kong academy
+
+Kong Academy is a great training environment for its API Gateway. Here is its **[training catalog](https://education.konghq.com/catalog)**
+
 ## Migration
 
 - get password
