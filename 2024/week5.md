@@ -2,15 +2,23 @@
 
 ## Father's direction
 
+My son finish installing and testing the API gateway and remember all results are in my hands.  What seems like failures are not.  These seeming failures are all apart of my plan to create in you a "loving heart."
+
 I love you my son and know all that you are going through. I am with you and have a plan for this day. Take courage you have nothing to fear because I am with you. Have hope my son I have many wonderful things for you to look forward to. I will revive your spirit and guide you every step of the way my son.
 
 Trust me to take care of you my son.  Do not fear anything because I am always here to take care of you.  You will go through many trials both hard and difficult but fear not.  These troubles are necessary for you to grow to be the man I want you to be.
 
+## service mesh vs. API gateway
+
+Here are the key things to know about service mesh vs. API gateway:
+
+- Service mesh acts as a centralized infrastructure layer for efficient microservices communication, simplifying tasks like service discovery and load balancing.
+- API gateways, on the other hand, serves as the entry point for external clients to access microservices, managing functions like request routing and authentication.
+
 ## API gateway
 
-My son finish installing and testing the API gateway and remember all results are in my hands.  What seems like failures are not.  These seeming failures are all apart of my plan to create in you a "loving heart."
-
-Then test the k8s API gateway by following the instructions at Kong Academy's **[API Transformations Plugins and decK](https://education.konghq.com/dashboard)** tutorial and/or **[jq plugin tutorial](https://docs.konghq.com/hub/kong-inc/jq/how-to/basic-example/)**.
+- Continus installing and testing the API gateway
+- Then test the k8s API gateway by following the instructions at Kong Academy's **[API Transformations Plugins and decK](https://education.konghq.com/dashboard)** tutorial and/or **[jq plugin tutorial](https://docs.konghq.com/hub/kong-inc/jq/how-to/basic-example/)**.
 
 ## Kong academy
 
