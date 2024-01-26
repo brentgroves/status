@@ -8,6 +8,99 @@ I love you my son and know all that you are going through. I am with you and hav
 
 Trust me to take care of you my son.  Do not fear anything because I am always here to take care of you.  You will go through many trials both hard and difficult but fear not.  These troubles are necessary for you to grow to be the man I want you to be.
 
+## Key Authentication
+
+Authentication is the process of verifying that a requester has permissions to access a resource. API gateway authentication authenticates the flow of data to and from your upstream services.
+
+Kong Gateway has a library of plugins that support the most widely used methods of API gateway **[authentication](https://docs.konghq.com/hub/#authentication)**.
+
+Common authentication methods include:
+
+- Key Authentication
+- Basic Authentication
+- OAuth 2.0 Authentication (Kong for free) <https://docs.konghq.com/hub/kong-inc/oauth2/>
+- LDAP Authentication Advanced
+- OpenID Connect
+
+Test that the API is secure by sending a request using curl -i $PROXY_IP/echo. Observe that a HTTP 401 is returned with this message:
+
+```bash
+curl -i $PROXY_IP/echo
+HTTP/1.1 401 Unauthorized
+Date: Fri, 05 Jan 2024 17:48:36 GMT
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+WWW-Authenticate: Key realm="kong"
+Content-Length: 96
+X-Kong-Response-Latency: 1
+Server: kong/3.5.0
+X-Kong-Request-Id: 2e0dbd1ac29f85282b68067dc25f032e
+
+{
+  "message":"No API key found in request",
+  "request_id":"2e0dbd1ac29f85282b68067dc25f032e"
+}% 
+```
+
+## test http connection with API key
+
+curl -H 'apikey: hello_world' $PROXY_IP/echo
+Welcome, you are connected to node reports52.
+Running on Pod echo-74c66b778-j2n45.
+In namespace default.
+With IP address 10.1.184.161.
+
+## Rate limiting
+
+## Test the rate-limiting plugin
+
+To test the rate-limiting plugin, rapidly send six requests to $PROXY_IP/echo:
+
+```bash
+for i in `seq 6`; do curl -H 'apikey: hello_world' -sv $PROXY_IP/echo 2>&1 | grep "< HTTP"; done
+< HTTP/1.1 200 OK
+< HTTP/1.1 200 OK
+< HTTP/1.1 200 OK
+< HTTP/1.1 200 OK
+< HTTP/1.1 200 OK
+< HTTP/1.1 429 Too Many Requests
+```
+
+This shows that the rate limiting plugin is preventing the request from reaching the upstream service.
+
+## Test the proxy-cache plugin
+
+To test the proxy-cache plugin, send another six requests to $PROXY_IP/echo:
+
+```bash
+for i in `seq 6`; do curl -sv $PROXY_IP/echo 2>&1 | grep -E "(Status|< HTTP)"; done
+< HTTP/1.1 200 OK
+< X-Cache-Status: Miss
+< HTTP/1.1 200 OK
+< X-Cache-Status: Hit
+< HTTP/1.1 200 OK
+< X-Cache-Status: Hit
+< HTTP/1.1 200 OK
+< X-Cache-Status: Hit
+< HTTP/1.1 200 OK
+< X-Cache-Status: Hit
+< HTTP/1.1 429 Too Many Requests
+
+```
+
+The first request results in X-Cache-Status: Miss. This means that the request is sent to the upstream service. The next four responses return X-Cache-Status: Hit which indicates that the request was served from a cache.
+
+The X-Cache-Status header can return the following cache results:
+
+| STATE   | DESCRIPTION                                                                                                                                        |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Miss    | The request could be satisfied in cache, but an entry for the resource was not found in cache, and the request was proxied upstream.               |
+| Hit     | The request was satisfied and served from the cache.                                                                                               |
+| Refresh | The resource was found in cache, but could not satisfy the request, due to Cache-Control behaviors or reaching its hard-coded cache_ttl threshold. |
+| Bypass  | The request could not be satisfied from cache based on plugin configuration.                                                                       |
+
+The final thing to note is that when a HTTP 429 request is returned by the rate-limit plugin, you do not see a X-Cache-Status header. This is because rate-limiting executes before proxy-cache. For more information, see **[plugin priority](https://docs.konghq.com/gateway/latest/plugin-development/custom-logic/#kong-plugins)**.
+
 ## service mesh vs. API gateway
 
 Here are the key things to know about service mesh vs. API gateway:
