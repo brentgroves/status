@@ -8,39 +8,21 @@ I love you my son and know all that you are going through. I am with you and hav
 
 Trust me to take care of you my son.  Do not fear anything because I am always here to take care of you.  You will go through many trials both hard and difficult but fear not.  These troubles are necessary for you to grow to be the man I want you to be.
 
-## How to find the **[mac address](https://unix.stackexchange.com/questions/120153/resolving-mac-address-from-ip-address-in-linux)** to remote ip
+Good morning dear ones,
 
-Resolving MAC Address from IP Address in Linux
+I hope all is well with you and your loved ones.  As always please feel free to get in contact with me at home or at work for anything.
 
-I need to write a bash script wherein I have to create a file which holds the details of IP Addresses of the hosts and their mapping with corresponding MAC Addresses.
+Sincerely yours,
+Brent
+260-564-4868
 
-Is there any possible way with which I can find out the MAC address of any (remote) host when IP address of the host is available?
+Finished 
+Working on the report sytem API gateway.
+To do continue working on the guage report.
 
-If you just want to find out the MAC address of a given IP address you can use the command arp to look it up, once you've pinged the system 1 time.
+## API Gatework tasks
 
-```bash
-# Find mac address of reports1 load-balancer ip
-# ping from reports-alb
-ping -c1 10.1.0.8 
-PING 10.1.0.8 (10.1.0.8) 56(84) bytes of data.
-From 10.1.0.112 icmp_seq=1 Destination Host Unreachable
-
---- 10.1.0.8 ping statistics ---
-1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
-```
-
-Now look up in the ARP table:
-
-```bash
-# Find mac address of reports1 load-balancer 
-$ arp -a
-reports13 (10.1.0.112) at 98:90:96:c3:f4:83 [ether] on enp0s25
-? (10.1.0.32) at cc:70:ed:1b:4f:c0 [ether] on enp0s25
-Super-PLT-7.BUSCHE-CNC.com (10.1.0.170) at 4c:91:7a:64:0f:ad [ether] on enp0s25
-reports1.busche-cnc.com (10.1.0.8) at 98:90:96:c3:f4:83 [ether] on enp0s25
-```
-
-## Key Authentication
+### Key Authentication
 
 Authentication is the process of verifying that a requester has permissions to access a resource. API gateway authentication authenticates the flow of data to and from your upstream services.
 
@@ -74,7 +56,7 @@ X-Kong-Request-Id: 2e0dbd1ac29f85282b68067dc25f032e
 }% 
 ```
 
-## test http connection with API key
+### test http connection with API key
 
 curl -H 'apikey: hello_world' $PROXY_IP/echo
 Welcome, you are connected to node reports52.
@@ -82,9 +64,9 @@ Running on Pod echo-74c66b778-j2n45.
 In namespace default.
 With IP address 10.1.184.161.
 
-## Rate limiting
+### Rate limiting
 
-## Test the rate-limiting plugin
+### Test the rate-limiting plugin
 
 To test the rate-limiting plugin, rapidly send six requests to $PROXY_IP/echo:
 
@@ -100,7 +82,7 @@ for i in `seq 6`; do curl -H 'apikey: hello_world' -sv $PROXY_IP/echo 2>&1 | gre
 
 This shows that the rate limiting plugin is preventing the request from reaching the upstream service.
 
-## Test the proxy-cache plugin
+### Test the proxy-cache plugin
 
 To test the proxy-cache plugin, send another six requests to $PROXY_IP/echo:
 
