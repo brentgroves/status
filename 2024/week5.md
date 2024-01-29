@@ -16,7 +16,7 @@ Sincerely yours,
 Brent
 260-564-4868
 
-Finished 
+Finished
 Working on the report sytem API gateway.
 To do continue working on the guage report.
 
