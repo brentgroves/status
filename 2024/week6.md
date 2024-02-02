@@ -1,7 +1,7 @@
 
 # Father's direction
 
-I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and want you to learn to love each person.
+I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
 
 ## Schema-Driven Development
 
@@ -24,6 +24,18 @@ const resolvers = {
   }
 }
 ```
+
+## **[How to Perform Database Migrations using Go Migrate](https://www.freecodecamp.org/news/database-migration-golang-migrate/)**
+
+### What is a Database Migration?
+
+A database migration, also known as a schema migration, is a set of changes to be made to a structure of objects within a relational database.
+
+It is a way to manage and implement incremental changes to the structure of data in a controlled, programmatic manner. These changes are often reversible, meaning they can be undone or rolled back if required.
+
+The process of migration helps to change the database schema from its current state to a new desired state, whether it involves adding tables and columns, removing elements, splitting fields, or changing types and constraints.
+
+By managing these changes in a programmatic way, it becomes easier to maintain consistency and accuracy in the database, as well as keep track of the history of modifications made to it.
 
 ## Why **[OpenStack](https://microstack.run/)**
 
