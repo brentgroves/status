@@ -3,7 +3,58 @@
 
 I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
 
-## Schema-Driven Development
+### Ingress to Kubernetes cluster
+
+Kubernetes lives in a virtual network. To access k8s services from outside of the cluster:
+
+- static IPs apart from any of the host IPs are used.
+- K8s network interface uses the drivers of host NICs.
+- Network packets sent to K8s IP/MAC addresses are forwarded to the Kubernetes API gateway for to be processed.
+
+### Resolving MAC Address from IP Address in Linux
+
+If you just want to find out the MAC address of a given IP address you can use the command arp to look it up, once you've pinged the system 1 time.
+
+```bash
+# Find mac address of reports1 load-balancer ip
+# ping from reports-alb
+ping -c1 10.1.0.8 
+PING 10.1.0.8 (10.1.0.8) 56(84) bytes of data.
+From 10.1.0.112 icmp_seq=1 Destination Host Unreachable
+
+--- 10.1.0.8 ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+```
+
+Now look up in the ARP table:
+
+```bash
+# Find mac address of reports1 load-balancer 
+$ arp -a
+reports13 (10.1.0.112) at 98:90:96:c3:f4:83 [ether] on enp0s25
+reports1.busche-cnc.com (10.1.0.8) at 98:90:96:c3:f4:83 [ether] on enp0s25
+```
+
+## The Kubernetes network model
+
+The Kubernetes network model specifies:
+
+- Every pod gets its own IP address
+- Containers within a pod share the pod IP address and can communicate freely with each other
+- Pods can communicate with all other pods in the cluster using pod IP addresses (without NAT)
+- Isolation (restricting what each pod can communicate with) is defined using network policies
+
+```bash
+# From reports1 k8s cluster
+ip netns list
+cni-3415112c-7188-57b8-a2b5-33e00e73e5c0 (id: 6)
+cni-5c22117f-dfc1-3cd4-cf74-46cd4d473a10 (id: 5)
+cni-00b4ddf8-b38a-7c21-ad79-2220af009c1d (id: 4)
+cni-43c4f73a-eabf-7a07-7bef-4b47c49732c4 (id: 3)
+cni-d7fa7a8c-f3dd-60a2-0761-b19736e9af04 (id: 2)
+```
+
+## Graph API / Schema-Driven Development
 
 In GraphQL your API starts with a schema that defines all your types, queries and mutations, It helps others to understand your API. So it’s like a contract between server and the client. Whenever you need to add a new capability to a GraphQL API you must redefine schema file and then implement that part in your code. GraphQL has its Schema Definition Language for this purpose. gqlgen is a Go library for building GraphQL servers and has a nice feature that generates code based on your schema definition.
 
