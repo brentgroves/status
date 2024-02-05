@@ -1,9 +1,22 @@
 
 # Father's direction
 
-I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
+I love you and will make in you a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
 
-### Ingress to Kubernetes cluster
+Good morning dear ones,
+I hope you are enjoying the sunshine this week like we are here in Albion, and you and your loved ones are doing well! As always please feel free to ask for anything at home or work.  May your week be pleasant and fruitful friends :-)
+
+Sincerely yours,
+Brent
+260-564-4868
+
+## Highlights
+
+- Adding an API gateway to our k8s cluster.
+- Working on a graph API for our reporting server.
+- work on the guage report
+
+## Ingress to Kubernetes cluster
 
 Kubernetes lives in a virtual network. To access k8s services from outside of the cluster:
 
