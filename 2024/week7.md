@@ -2,6 +2,10 @@
 
 I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
 
+## Mobex to Linamar **[Azure SQL copy](https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-copy-azure-sql-database-to-a-different-subscription-and/ba-p/3965985)**
+
+- Test by copying Azure SQL managed instance DW database to my personal tenant's Azure SQL DW database.
+
 ## Create Microsoft Team
 
 Name: Data Analytics
