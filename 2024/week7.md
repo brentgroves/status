@@ -26,6 +26,14 @@ Financial
 Add paginated report tab need license.
 Brandon Blackwood gage report
 
+## Report System IT Admin, Hardware, or Software Topics of Interest
+
+This markdown file is located at: ~/src/repsys/meetings/2024/week6.md
+It can be viewed from <https://markdownlivepreview.com/> or by logging into devcon2(10.1.0.120) as bcieslik,bcook,sjackson,cstangland,rdecker,bhall,jdavis,or kyoung with password k8sAdmin1! and opening week45.md from visual studio code and pressing shift-ctrl-v.
+
+Adjust meeeting to reflect audience include our customers such as Dan Martin to share progress and gain usage insights.
+Dan Martin to Reports
+
 ## tcpdump
 
 Tcpdump is a command line utility that allows you to capture and analyze network traffic going through your system. It is often used to help troubleshoot network issues, as well as a security tool.
