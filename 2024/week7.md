@@ -2,6 +2,9 @@
 
 I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
 
+The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
+
+
 ## Mobex to Linamar **[Azure SQL copy](https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-copy-azure-sql-database-to-a-different-subscription-and/ba-p/3965985)**
 
 - Clean up Azure SQL managed instance DW
