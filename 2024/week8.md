@@ -4,6 +4,45 @@ I love you and will help you to have a loving heart!  I will give you courage an
 
 The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
 
+Good morning dear ones,
+I hope all of you are doing well on this fine morning and had an enjoyable weekend! As always please feel free to contact me anytime at home or at work for whatever :-)
+
+Sincerely yours,
+Brent
+260564-4868
+
+## Mobex to Linamar **[Azure SQL copy](https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-copy-azure-sql-database-to-a-different-subscription-and/ba-p/3965985)**
+
+- Research SQL Server bacpac/dacpac.
+- What can we backup/restore to: On-Prem SQL Server hosted on Windows and Linux, Azure SQL managed instance, Azure SQL database?
+
+## Create Microsoft Team
+
+Name: Data Analytics
+Owner: Brent Groves
+Members:
+Jake Kunkel
+Sam Jackson
+Dan Martin
+Brendan Cieslik
+Brad D. Cook
+Kevin Young
+Apps: Power BI
+Channels:
+General
+Financial
+
+Add paginated report tab need license.
+Brandon Blackwood gage report
+
+## Report System IT Admin, Hardware, or Software Topics of Interest
+
+This markdown file is located at: ~/src/repsys/meetings/2024/week6.md
+It can be viewed from <https://markdownlivepreview.com/> or by logging into devcon2(10.1.0.120) as bcieslik,bcook,sjackson,cstangland,rdecker,bhall,jdavis,or kyoung with password k8sAdmin1! and opening week45.md from visual studio code and pressing shift-ctrl-v.
+
+Adjust meeeting to reflect audience include our customers such as Dan Martin to share progress and gain usage insights.
+Dan Martin to Reports
+
 ## **[Advantages of the Azure SQL Database](https://blog.devart.com/what-is-azure-sql.html)**
 
 Microsoft was among the major players who launched and shaped modern cloud platforms, creating a comprehensive infrastructure to manage data and databases. Azure SQL Databases are perfect replacements for “standard” SQL Server databases on-premise. Besides, the Azure cloud offers additional benefits.

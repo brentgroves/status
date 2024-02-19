@@ -4,6 +4,12 @@ I love you and will help you to have a loving heart!  I will give you courage an
 
 The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
 
+Good morning dear ones,
+I hope you and your loved ones had a very pleasant and enjoyable weekend.  Please feel free to call me any time at home or at work for whatever you wish. And may we all have a good week enjoying each others company and work as much as that is possible :-)
+
+Sincerely yours,
+Brent
+260564-4868
 
 ## Mobex to Linamar **[Azure SQL copy](https://techcommunity.microsoft.com/t5/azure-database-support-blog/how-to-copy-azure-sql-database-to-a-different-subscription-and/ba-p/3965985)**
 
