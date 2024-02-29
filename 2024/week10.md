@@ -23,6 +23,14 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 - Create a bash script and the Azure CLI to create all Azure resources.
 - Conduct meetings as-needed with Brent H. Amir, Jarod, and Kevin.
 
+## To do
+
+- Go web app in aks and teams
+- azgraph api using certificate
+- rsdw on reports5 in k8s
+- add Azure app registration code to az CLI bash script
+- Install OpenStack/K8s cluster on 3 R620s
+
 ## Repsys Notes
 
 - Divide our Azure SQL Managed Instance into two databases: Azure SQL Db for the Data Warehouse and an On-Prem MSSQL ETL database.
