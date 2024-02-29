@@ -23,15 +23,16 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 - Create a bash script and the Azure CLI to create all Azure resources.
 - Conduct meetings as-needed with Brent H. Amir, Jarod, and Kevin.
 
-## Data Warehouse Changes
+## Repsys Notes
 
 - Divide our Azure SQL Managed Instance into two databases: Azure SQL Db for the Data Warehouse and an On-Prem MSSQL ETL database.
 - Run the ETL database on On-Prem K8s
 - Every that was in the Azure SQL Managed Instance is now in the ETL database but it has not been deployed to K8s yet.
 - Currently the Azure SQL Db has only the TB result set
 - Power BI reports will connect to the new Data Warehouse
+- Repsys Portal to accept report requests and view export all reports.
 
-## sample script
+## Azure repsys resource creation script
 
 ```bash
 #!/usr/bin/env bash
