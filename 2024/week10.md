@@ -31,6 +31,12 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 - add Azure app registration code to az CLI bash script
 - Install OpenStack/K8s cluster on 3 R620s
 
+## Go and HTMX
+
+You've to get used to the idea of returning snippets of HTML which, admittedly, can take some time when you're used to "traditional" SSR applications and especially when coming from the SPA world. However, once you do, you get an application that has the same feel of an SPA but without the overhead.
+
+Let's say you have a table component with some filters you can apply. When applying these filters (e.g. filter by creation date), you would trigger a request to fetch that data based on an event and __only__ send back the updated data needed to fill the table. The rest of the page stays as is. Having done quite a bit of work with HTMX, both in Go but also in Rust, it has become my go-to tool.
+
 ## Repsys Notes
 
 - Divide our Azure SQL Managed Instance into two databases: Azure SQL Db for the Data Warehouse and an On-Prem MSSQL ETL database.
