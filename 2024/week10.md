@@ -17,6 +17,7 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 
 The goal is to get Azure resource costs to be approximately $500 per month. Also to request a resource group named "repsys" in which the user "<bGroves@linamar.com>" is assigned the "Contributor" role.
 
+- ip6 address for k8s and mach2 pki
 - Create an Excel file showing the estimated monthly cost of all Azure resources.
 - Contact IT and IS team to gather any resource needs I may be unaware of.
 - Back up our Azure SQL work and data warehouse database schemas to an  on-premise SQL Server 2022 running in a Docker container.
