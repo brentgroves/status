@@ -5,7 +5,7 @@ I love you and will help you to have a loving heart!  I will give you courage an
 The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
 
 Good morning dear ones,
-I hope everyone is doing well, staying healthy, and enjoying the wonderful spring weather we are having!  Please don't hesitate to reach out to me anytime at home or work. If any of the following is not what you wish please say so :-)
+May our week be filled with excitement about doing what we love! Enjoy your week my friends. Please don't hesitate to reach out to me anytime at home or work. If any of the following is not what you wish please say so :-)
 
 Sincerely yours,
 Brent G.
@@ -17,11 +17,11 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 
 The goal is to get Azure resource costs to be approximately $500 per month. Also to request a resource group named "repsys" in which the user "<bGroves@linamar.com>" is assigned the "Contributor" role.
 
-- ip6 address for k8s and mach2 pki
 - Create an Excel file showing the estimated monthly cost of all Azure resources.
 - Contact IT and IS team to gather any resource needs I may be unaware of.
 - Back up our Azure SQL work and data warehouse database schemas to an  on-premise SQL Server 2022 running in a Docker container.
 - Create a bash script and the Azure CLI to create all Azure resources.
+- research ip6 addresses and subnet for k8s and OpenStack.
 - Conduct meetings as-needed with Brent H. Amir, Jarod, and Kevin.
 
 ## To do
@@ -32,11 +32,22 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 - add Azure app registration code to az CLI bash script
 - Install OpenStack/K8s cluster on 3 R620s
 
-## Go and HTMX
+## HTMX
 
-You've to get used to the idea of returning snippets of HTML which, admittedly, can take some time when you're used to "traditional" SSR applications and especially when coming from the SPA world. However, once you do, you get an application that has the same feel of an SPA but without the overhead.
+https://htmx.org/
 
-Let's say you have a table component with some filters you can apply. When applying these filters (e.g. filter by creation date), you would trigger a request to fetch that data based on an event and __only__ send back the updated data needed to fill the table. The rest of the page stays as is. Having done quite a bit of work with HTMX, both in Go but also in Rust, it has become my go-to tool.
+htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
+
+htmx is small (~14k min.gz’d), dependency-free, extendable, IE11 compatible & has reduced code base sizes by 67% when compared with react
+
+### motivation
+
+- Why should only "<a> & <form>" be able to make HTTP requests?
+- Why should only click & submit events trigger them?
+- Why should only GET & POST methods be available?
+- Why should you only be able to replace the entire screen?
+By removing these constraints, htmx completes HTML as a hypertext
+
 
 ## Repsys Notes
 
