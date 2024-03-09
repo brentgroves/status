@@ -33,6 +33,18 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 - Install OpenStack/K8s cluster on 3 R620s
 - Would IP6 be better than IP4 for multi-site VPN
 
+## SQL Stack
+
+- Machine Language - numbers represent instruction
+- Assembly Language - words represent machine instructions
+- General Purpose Language - commands such as while loop that represent multiple assembly language instructions.
+- SQL - Concise while loop syntax in the form of select columns and join tables.
+- SQL group - Select statement that groups and orders records.
+- SQL window functions - More concise multiple grouping of records called partitions.
+
+Example: When we partition records into serial_no and order by change date and lag by 1 the previous record in the partition could have the same location.  If we partition by serial_no and location when we lag by 1 the previous record will have a different location. This partion will group represent every same location change record as just 1 record and we loose the fact that a container could move to a location more than once in its history.
+
+
 ## HTMX
 
 <https://htmx.org/>
