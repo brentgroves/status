@@ -44,6 +44,17 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 
 Example: When we partition records into serial_no and order by change date and lag by 1 the previous record in the partition could have the same location.  If we partition by serial_no and location when we lag by 1 the previous record will have a different location. This partion will group represent every same location change record as just 1 record and we loose the fact that a container could move to a location more than once in its history.
 
+## What is OpenStack
+
+It is an API for a hypervisor.
+
+## What is a hypervisor?
+
+It is multiple software components each focused on the virtualization of singular hardware resource such as memory, storage, cpu, network port working together to create and manage virtual machines.
+
+## Repsys OpenStack
+
+3 dell r620s with 192 GB ram and 10 network ports each linked together to form a programmatically controlled hypervisor.
 
 ## HTMX
 
