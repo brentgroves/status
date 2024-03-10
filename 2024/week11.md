@@ -36,8 +36,51 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 ## SQL Stack
 
 - Machine Language - numbers represent instruction
+
+``` machine_code
+8A1E0A00                mov bl, [10]
+```
+
 - Assembly Language - words represent machine instructions
+
+```masm
+   #make_COM#
+   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 1
+   MOV BL, 2
+   PRINTN 'Hello World!'   ; macro.
+   MOV CL, 3
+   PRINTN 'Welcome!'       ; macro.
+   RET
+```
+
 - General Purpose Language - commands such as while loop that represent multiple assembly language instructions.
+
+![](https://www.sqlshack.com/wp-content/uploads/2019/10/sampletable-image.png)
+```sql
+
+USE tempdb
+GO
+ 
+DECLARE @Counter INT , @MaxId INT, 
+        @CountryName NVARCHAR(100)
+SELECT @Counter = min(Id) , @MaxId = max(Id) 
+FROM SampleTable
+ 
+WHILE(@Counter IS NOT NULL
+      AND @Counter <= @MaxId)
+BEGIN
+   SELECT @CountryName = CountryName
+   FROM SampleTable WHERE Id = @Counter
+    
+   PRINT CONVERT(VARCHAR,@Counter) + '. country name is ' + @CountryName  
+   SET @Counter  = @Counter  + 1        
+END
+  ```
+
+  ![](https://www.sqlshack.com/wp-content/uploads/2019/10/reading-table-records-with-sql-while-loop.png)
+
 - SQL - Concise while loop syntax in the form of select columns and join tables.
 - SQL group - Select statement that groups and orders records.
 - SQL window functions - More concise multiple grouping of records called partitions.
