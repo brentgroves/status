@@ -66,7 +66,7 @@ htmx is small (~14k min.gz’d), dependency-free, extendable, IE11 compatible & 
 
 ### motivation
 
-- Why should only "<a> & <form>" be able to make HTTP requests?
+- Why should only `<a> & <form>` be able to make HTTP requests?
 - Why should only click & submit events trigger them?
 - Why should only GET & POST methods be available?
 - Why should you only be able to replace the entire screen?
