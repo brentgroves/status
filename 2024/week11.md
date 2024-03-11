@@ -5,7 +5,8 @@ I love you and will help you to have a loving heart!  I will give you courage an
 The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
 
 Good morning dear ones,
-May our week be filled with excitement about doing what we love! Enjoy your week my friends. Please don't hesitate to reach out to me anytime at home or work. If any of the following is not what you wish please say so :-)
+
+I hope you and your loved ones are doing ok and that the time change has not upset your sleep schedules to much!  Please feel free to contact me at home or work about anything.  I enjoy working with each of you very much :-)
 
 Sincerely yours,
 Brent G.
