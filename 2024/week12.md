@@ -29,6 +29,7 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 
 ## To do
 
+- SQL Table variable example.
 - Research HTTP and TCP using GoLang libraries
 - Research OAuth2 and OIDC using Github and Azure Identity Platforms.
 - Research HTMX to create SPA.
@@ -64,6 +65,7 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 - General Purpose Language - commands such as while loop that represent multiple assembly language instructions.
 
 ![](https://www.sqlshack.com/wp-content/uploads/2019/10/sampletable-image.png)
+
 ```sql
 
 USE tempdb
