@@ -29,6 +29,7 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 
 ## To do
 
+- **[HTMX GoLang OAuth2/OIDC Login](https://github.com/Darkness4/auth-htmx)**
 - SQL Table variable example.
 - Research HTTP and TCP using GoLang libraries
 - Research OAuth2 and OIDC using Github and Azure Identity Platforms.
