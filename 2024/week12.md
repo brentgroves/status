@@ -16,6 +16,13 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
+## OAuth2 Authentication/Authorization Summary
+
+- OIDC/PKCE Authentication Flow works with HTTP Get/Post requests
+- OAuth2 Authorization Flow with HTTP Get/Post requests works fine with Office 365 work accounts but is beyond me for Office 365 personal accounts. We were able to retrieve an access token from the Graph Explorer that will work with HTTP Get/Post requests for even Office 365 personal account.
+
+Next: Try using Microsoft MSAL library instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
+
 ## Plan
 
 The goal is to get Azure resource costs to be approximately $500 per month. Also to request a resource group named "repsys" in which the user "<bGroves@linamar.com>" is assigned the "Contributor" role.
