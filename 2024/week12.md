@@ -26,6 +26,28 @@ Next:
 - **[Try this code flow on Office 365 Personal Account](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)** 
 - Try using **[Microsoft MSAL library](https://github.com/AzureAD/microsoft-authentication-library-for-go)** instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
 
+## Research
+
+- **[SQL yacc compiler](https://github.com/LittleGreenMouse/SQLCompiler)** 
+- **[Online SQL compiler](https://sqlfiddle.com/)**
+  What is the purpose of SQL Fiddle?
+  We created SQL Fiddle to provide an online SQL playground to let people learn and improve their SQL skills.
+
+  SQL Fiddle is more than just an online SQL editor; it's a comprehensive platform designed to support your journey in mastering SQL. Whether you're a beginner looking to grasp the basics or an experienced professional refining your skills, SQL Fiddle provides the tools and resources you need to succeed.
+
+  You can use this website as:
+
+  Your personal sandbox to practice online SQL
+  A platform to share SQL queries with your colleagues
+  An online SQL editor to ask or answer SQL questions on Stack Overflow
+  SQL Fiddle is dedicated to fostering a supportive and dynamic learning environment, empowering you to achieve your SQL goals and excel in your database endeavors.
+
+
+- **[What is PKCE](https://medium.com/identity-beyond-borders/what-the-heck-is-pkce-40662e801a76)**
+- **[PKCE cli](https://github.com/oktadev/pkce-cli)**
+- **[bash PKCE](https://www.linkedin.com/pulse/pkce-explained-via-nix-cli-ed-macdonald/)**
+~[alt](https://miro.medium.com/v2/resize:fit:640/format:webp/1*sFEB63nCD9yzi6go7cme9g.png)
+
 ## Plan
 
 The goal is to get Azure resource costs to be approximately $500 per month. Also to request a resource group named "repsys" in which the user "<bGroves@linamar.com>" is assigned the "Contributor" role.
