@@ -21,7 +21,10 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 - OIDC/PKCE Authentication Flow works with HTTP Get/Post requests
 - OAuth2 Authorization Flow with HTTP Get/Post requests works fine with Office 365 work accounts but is beyond me for Office 365 personal accounts. We were able to retrieve an access token from the Graph Explorer that will work with HTTP Get/Post requests for even Office 365 personal account.
 
-Next: Try using Microsoft MSAL library instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
+Next:
+
+- **[Try this code flow on Office 365 Personal Account](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)** 
+- Try using **[Microsoft MSAL library](https://github.com/AzureAD/microsoft-authentication-library-for-go)** instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
 
 ## Plan
 
@@ -36,7 +39,8 @@ The goal is to get Azure resource costs to be approximately $500 per month. Also
 
 ## To do
 
-- **[HTMX GoLang OAuth2/OIDC Login](https://github.com/Darkness4/auth-htmx)**
+- **[HTMX GoLang OAuth2/OIDC Login](https://github.com/Darkness4/auth-htmx)** or **[login page example](https://medium.com/@hhartleyjs/making-a-login-page-with-htmx-go-5acbcc504426)**
+
 - SQL Table variable example.
 - Research HTTP and TCP using GoLang libraries
 - Research OAuth2 and OIDC using Github and Azure Identity Platforms.
