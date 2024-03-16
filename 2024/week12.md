@@ -27,8 +27,7 @@ Next:
 - Try using **[Microsoft MSAL library](https://github.com/AzureAD/microsoft-authentication-library-for-go)** instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
 
 ## Research
-- **[Microsoft Subscriptions and usage]()**
-- **[Microsoft Developer Program](https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started)**
+- **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)**
 - **[SQL yacc compiler](https://github.com/LittleGreenMouse/SQLCompiler)** 
 - **[Online SQL compiler](https://sqlfiddle.com/)**
   What is the purpose of SQL Fiddle?
