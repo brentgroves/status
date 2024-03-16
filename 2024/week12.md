@@ -16,16 +16,30 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
+
 ## OAuth2 Authentication/Authorization Summary
 
 - OIDC/PKCE Authentication Flow works with HTTP Get/Post requests
 - OAuth2 Authorization Flow with HTTP Get/Post requests works fine with Office 365 work accounts but is beyond me for Office 365 personal accounts. We were able to retrieve an access token from the Graph Explorer that will work with HTTP Get/Post requests for even Office 365 personal account.
 
-Next:
 
-- **[Try this code flow on Office 365 Personal Account](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)** 
-- Try using **[Microsoft MSAL library](https://github.com/AzureAD/microsoft-authentication-library-for-go)** instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
+- **[ER diagrams in Markdown](https://mermaid.js.org/intro/syntax-reference.html)**
 
+```mermaid
+erDiagram
+          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+          CUSTOMER ||--o{ ORDER : places
+          CUSTOMER ||--o{ INVOICE : "liable for"
+          DELIVERY-ADDRESS ||--o{ ORDER : receives
+          INVOICE ||--|{ ORDER : covers
+          ORDER ||--|{ ORDER-ITEM : includes
+          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+```
+## Notes
+
+- You can use a basic office 365 account from an azure account but it is considered an external user not in the tennant so when registering an app you must use the common not tenant endpoints and allow all organizations to access.
+  
 ## Research
 - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)**
 - **[SQL yacc compiler](https://github.com/LittleGreenMouse/SQLCompiler)** 
@@ -44,7 +58,7 @@ Next:
 - **[What is PKCE](https://medium.com/identity-beyond-borders/what-the-heck-is-pkce-40662e801a76)**
 - **[PKCE cli](https://github.com/oktadev/pkce-cli)**
 - **[bash PKCE](https://www.linkedin.com/pulse/pkce-explained-via-nix-cli-ed-macdonald/)**
-~[alt](https://miro.medium.com/v2/resize:fit:640/format:webp/1*sFEB63nCD9yzi6go7cme9g.png)
+![alt](https://miro.medium.com/v2/resize:fit:640/format:webp/1*sFEB63nCD9yzi6go7cme9g.png)
 
 ## Plan
 
