@@ -27,7 +27,8 @@ Next:
 - Try using **[Microsoft MSAL library](https://github.com/AzureAD/microsoft-authentication-library-for-go)** instead of HTTP Get/Post requests to retrieve access token to use in Graph API requests.
 
 ## Research
-
+- **[Microsoft Subscriptions and usage]()**
+- **[Microsoft Developer Program](https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started)**
 - **[SQL yacc compiler](https://github.com/LittleGreenMouse/SQLCompiler)** 
 - **[Online SQL compiler](https://sqlfiddle.com/)**
   What is the purpose of SQL Fiddle?
@@ -41,8 +42,6 @@ Next:
   A platform to share SQL queries with your colleagues
   An online SQL editor to ask or answer SQL questions on Stack Overflow
   SQL Fiddle is dedicated to fostering a supportive and dynamic learning environment, empowering you to achieve your SQL goals and excel in your database endeavors.
-
-
 - **[What is PKCE](https://medium.com/identity-beyond-borders/what-the-heck-is-pkce-40662e801a76)**
 - **[PKCE cli](https://github.com/oktadev/pkce-cli)**
 - **[bash PKCE](https://www.linkedin.com/pulse/pkce-explained-via-nix-cli-ed-macdonald/)**
