@@ -1,5 +1,7 @@
 # Father's direction
 
+My son do not be anxious when there is so many things to do.  Instead look to us for guidance and we will help you with each task.  Remember we have a plan for you and we will be with you each step of the way so do not worry our son.
+
 We have heard your prayer and will give you courage to face every trial, trouble, pain, and sorrow.  You will be able to endure each hardship because of the faith and hope that we have given you.  So do not fear and rejoice because along with the hardships you must face to learn what you must there will also be great wonders for you to explore with us and those around you!
 
 I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
@@ -7,8 +9,7 @@ I love you and will help you to have a loving heart!  I will give you courage an
 The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
 
 Good morning dear ones,
-
-I hope you and your loved ones are doing ok and that the time change has not upset your sleep schedules to much!  Please feel free to contact me at home or work about anything.  I enjoy working with each of you very much :-)
+I hope you are doing well today and are not dreading but looking forward to our week of work my friends.  As always please feel free to call me at home or at work about anything you like!  
 
 Sincerely yours,
 Brent G.
@@ -22,7 +23,11 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 - OIDC/PKCE Authentication Flow works with HTTP Get/Post requests
 - OAuth2 Authorization Flow with HTTP Get/Post requests works fine with Office 365 work accounts but is beyond me for Office 365 personal accounts. We were able to retrieve an access token from the Graph Explorer that will work with HTTP Get/Post requests for even Office 365 personal account.
 
+## Notes
 
+- You can use a basic office 365 account from an azure account but it is considered an external user not in the tennant so when registering an app you must use the common not tenant endpoints and allow all organizations to access.
+
+## Flow charts and diagrams in Markdown 
 - **[ER diagrams in Markdown](https://mermaid.js.org/intro/syntax-reference.html)**
 
 ```mermaid
@@ -36,9 +41,6 @@ erDiagram
           PRODUCT-CATEGORY ||--|{ PRODUCT : contains
           PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
-## Notes
-
-- You can use a basic office 365 account from an azure account but it is considered an external user not in the tennant so when registering an app you must use the common not tenant endpoints and allow all organizations to access.
   
 ## Research
 - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)**
