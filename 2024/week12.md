@@ -17,7 +17,6 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
-
 ## OAuth2 Authentication/Authorization Summary
 
 - OIDC/PKCE Authentication Flow works with HTTP Get/Post requests
@@ -27,7 +26,8 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 
 - You can use a basic office 365 account from an azure account but it is considered an external user not in the tennant so when registering an app you must use the common not tenant endpoints and allow all organizations to access.
 
-## Flow charts and diagrams in Markdown 
+## Flow charts and diagrams in Markdown
+
 - **[ER diagrams in Markdown](https://mermaid.js.org/intro/syntax-reference.html)**
 
 ```mermaid
@@ -43,8 +43,9 @@ erDiagram
 ```
   
 ## Research
+
 - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)**
-- **[SQL yacc compiler](https://github.com/LittleGreenMouse/SQLCompiler)** 
+- **[SQL yacc compiler](https://github.com/LittleGreenMouse/SQLCompiler)**
 - **[Online SQL compiler](https://sqlfiddle.com/)**
   What is the purpose of SQL Fiddle?
   We created SQL Fiddle to provide an online SQL playground to let people learn and improve their SQL skills.
@@ -65,6 +66,12 @@ erDiagram
 ## Plan
 
 The goal is to get Azure resource costs to be approximately $500 per month. Also to request a resource group named "repsys" in which the user "<bGroves@linamar.com>" is assigned the "Contributor" role.
+
+- Access Azure Portal
+- Send Mail with Graph API or smtp
+<https://learn.microsoft.com/en-us/entra/identity-platform/scenario-daemon-overview>
+- create Azure SQL database
+Your administrator has disabled the App registrations experience in the Azure portal. You can still register or manage applications using PowerShell or another client such as Visual Studio.
 
 - Create an Excel file showing the estimated monthly cost of all Azure resources.
 - Contact IT and IS team to gather any resource needs I may be unaware of.
