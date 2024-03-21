@@ -1,5 +1,7 @@
 # Father's direction
 
+My son you can not find peace in contentment in work.  My intentions for work is that it can be a time we can enjoy together and that you can enjoy helping others. Peace and contentment will come when you follow me as I guide you in what to say and do. All results for my work for you are in my hands. I may decide for you to wait on many things to teach you that work can not be a source of peace and contentment.
+
 My son do not be anxious when there is so many things to do.  Instead look to us for guidance and we will help you with each task.  Remember we have a plan for you and we will be with you each step of the way so do not worry our son.
 
 We have heard your prayer and will give you courage to face every trial, trouble, pain, and sorrow.  You will be able to endure each hardship because of the faith and hope that we have given you.  So do not fear and rejoice because along with the hardships you must face to learn what you must there will also be great wonders for you to explore with us and those around you!
@@ -20,6 +22,9 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 ## Azure App Test
 
 - Created a test app in Linamar tenant using Azure CLI.
+- Created a oidc and send mail test app in Mobex tenant using Azure CLI.
+- Get admin consent for these apps.
+- Change redirect uri to fqdn.
 - It requires admin consent
 
 ## OAuth2 Authentication/Authorization Summary
