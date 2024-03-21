@@ -25,7 +25,12 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 - Created a oidc and send mail test app in Mobex tenant using Azure CLI.
 - Get admin consent for these apps.
 - Change redirect uri to fqdn.
-- It requires admin consent
+- It requires **[admin consent](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow#request-the-permissions-from-a-directory-admin)**
+- **[Get Token](curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&client_secret=qWgdYAmab0YSkuL1qKv5bPX&grant_type=client_credentials' 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token')**
+- **[Go credential flow example]https://www.example-code.com/golang/microsoft_graph_client_credentials.asp)**
+- **[Open API](https://learn.microsoft.com/en-us/openapi/kiota/)**
+- **[Go app client credential flow](https://www.example-code.com/golang/microsoft_graph_client_credentials.asp)**
+- https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow
 
 ## OAuth2 Authentication/Authorization Summary
 
