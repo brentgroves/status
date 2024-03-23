@@ -21,10 +21,13 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 
 ## Azure App
 - report flow
+  - Teams tab report requestor 
   - etl 
   - create excel
   - move excel to one drive
   - send email with one drive link
+- resources
+  - **[M365 E5 license](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5?activetab=pivot:overviewtab)** includes Power BI Pro. Have it for Mobex and have Linamar contact.  
 - Create a series of small REST apps.
   - get an access token using the credential flow.
   - get a user profile using oidc authentication.
