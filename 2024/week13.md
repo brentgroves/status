@@ -28,7 +28,7 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
   - send email with one drive link
 - resources
   - **[M365 E5 license](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5?activetab=pivot:overviewtab)** includes Power BI Pro. Have it for Mobex and have Linamar contact.  
-  - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** anyone with this subscription can create our source code repos.
+  - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** anyone with this subscription can create our source code repos. Would like one of these since have lot's of repos and am always adding ssh key to repos.
 - Create a series of small REST apps.
   - get an access token using the credential flow.
   - get a user profile using oidc authentication.
