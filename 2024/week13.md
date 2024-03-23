@@ -23,7 +23,7 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 - Create a series of small REST apps.
   - get an access token using the credential flow.
   - get a user profile using oidc authentication.
-  - send email with attachment. 
+  - send email with attachment from s3 storage. 
 - Created fork of **[Postman Microsoft Graph collection](https://learn.microsoft.com/en-us/graph/use-postman)** for testing and practice.
 - Practiced Azure app registration from the command line
 - Tested sending email from my developers tenant.
