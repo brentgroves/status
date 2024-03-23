@@ -20,7 +20,10 @@ Brent G.
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
 ## Azure App Test
-
+- Create a series of small REST apps.
+  - get an access token using the credential flow.
+  - get a user profile using oidc authentication.
+  - send email with attachment. 
 - Created fork of **[Postman Microsoft Graph collection](https://learn.microsoft.com/en-us/graph/use-postman)** for testing and practice.
 - Practiced Azure app registration from the command line
 - Tested sending email from my developers tenant.
