@@ -19,7 +19,12 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
-## Azure App Test
+## Azure App
+- report flow
+  - etl 
+  - create excel
+  - move excel to one drive
+  - send email with one drive link
 - Create a series of small REST apps.
   - get an access token using the credential flow.
   - get a user profile using oidc authentication.
