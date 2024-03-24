@@ -19,14 +19,20 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
-## Azure App
-- report flow
-  - Teams tab report requestor 
-  - etl 
-  - create excel
-  - move excel to one drive
-  - send email with one drive link
-- resources
+## Report Requestor App Chain
+  - rpt_teams: collect customer requests and status
+  - rpt_etl: runs etl scripts 
+  - rpt_store: stores result set with id and params in object database.
+  - rpt_excel: creates excel
+  - rpt_move: move excel to one drive and s3 storage
+  - rpt_mail: send email with one drive link
+
+## Microsoft Graph Access Token App
+  - Responsible for getting and refreshing the msgraph repsys access token.
+  - Publishes current msgraph access token to cache database.
+  - Other apps subscribe to cache database msgraph_access_token.  
+  
+## Azure MIS resources
   - **[M365 E5 license](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5?activetab=pivot:overviewtab)** includes Power BI Pro. Have it for Mobex and have Linamar contact.  
   - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** anyone with this subscription can create our source code repos. Would like one of these since have lot's of repos and am always adding ssh key to repos.
 - Create a series of small REST apps.
