@@ -22,28 +22,36 @@ Brent G.
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
 ## Microsoft 365 developers account
+
 I was fortunate enough to get into this program which is closed now.  If you would like to test something in Azure just ask me and I will give you access.
 
 ## Report Requestor App Chain
-  - rs_teams: collect customer requests and status
-  - rs_etl: runs etl scripts 
-  - rs_store: stores result set with id and params in the object database.
-  - rs_excel: creates excel
-  - rs_move: Move Excel to one drive and s3 storage
-  - rs_mail: send email with one drive link
+
+- rs_teams: collect customer requests and status
+- rs_etl: runs etl scripts
+- rs_store: stores result set with id and params in the object database.
+- rs_excel: creates excel
+- rs_move: Move Excel to one drive and s3 storage
+- rs_mail: send email with one drive link
+
+## [Microsoft Graph](https://dzone.com/articles/getting-access-token-for-microsoft-graph-using-oau)**
+
+Microsoft Graph is here to unite Azure and Office 365 data under a single roof. It is a simple REST API and Microsoft provided many examples of how to use it, including an interactive Graph Explorer which allows us to discover the different methods.
 
 ## Microsoft Graph Access Token App
-  - Responsible for getting and refreshing the msgraph repsys access token.
-  - Publishes current msgraph access token to cache database.
-  - Other apps subscribe to cache database msgraph_access_token.  
+
+- Responsible for getting and refreshing the msgraph repsys access token.
+- Publishes current msgraph access token to cache database.
+- Other apps subscribe to cache database msgraph_access_token.  
   
 ## Azure MIS resources
-  - **[M365 E5 license](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5?activetab=pivot:overviewtab)** includes Power BI Pro. Have it for Mobex and have Linamar contact.  
-  - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** Anyone with this subscription can create our source code repos. Would like one of these since have lots of repos and am always adding ssh keys to repos.
+
+- **[M365 E5 license](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5?activetab=pivot:overviewtab)** includes Power BI Pro. Have it for Mobex and have Linamar contact.  
+- **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** Anyone with this subscription can create our source code repos. Would like one of these since have lots of repos and am always adding ssh keys to repos.
 - Create a series of small REST apps.
   - get an access token using the credential flow.
   - get a user profile using OIDC authentication.
-  - send email with one drive links to Excel files. 
+  - send email with one drive links to Excel files.
 - Created fork of **[Postman Microsoft Graph collection](https://learn.microsoft.com/en-us/graph/use-postman)** for testing and practice.
 - Practiced Azure app registration from the command line
 - Tested sending email from my developer's tenant.
@@ -183,6 +191,7 @@ END
 - SQL window functions - More concise multiple grouping of records called partitions.
 
 Example: When we partition records into serial_no and order by change date and lag by 1 the previous record in the partition could have the same location.  If we partition by serial_no and location when we lag by 1 the previous record will have a different location. This partion will group represent every same location change record as just 1 record and we loose the fact that a container could move to a location more than once in its history.
+
 ## What is OpenStack
 
 It is a clusterable hypervisor which can be driven by an API.
