@@ -8,24 +8,29 @@ We have heard your prayer and will give you courage to face every trial, trouble
 
 I love you and will help you to have a loving heart!  I will give you courage and help you to bear each trial and endure every hardship my son.  Do not forget that you are part of a community and I want you to learn to love each person, creature, and even the land where you live.
 
-The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work.
+The world's love is performance based, but my love is unconditional. The world's system promotes fear and says you must perform better than your neighbor.  I say help your neighbor and especially help the ones that are struggling. Do not worry about your own status.  Do not promote yourself instead think of others and help them in their work. Only in this way will you have perfect peace my beloved son.
 
+```text
 Good morning dear ones,
-I hope you are doing well today and are not dreading but looking forward to our week of work my friends.  As always please feel free to call me at home or at work about anything you like!  
+I hope you and your loved ones are doing well today and I value each one of you as friends who work together enjoying each others company as we get what needs done :-)  As always please feel free to call me at home or at work about anything you like!  
 
 Sincerely yours,
 Brent G.
 260-564-4868
+```
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
+## Microsoft 365 developers account
+I was fortunate enough to get into this program which is closed now.  If you would like to test something in Azure just ask me and I will give you access.
+
 ## Report Requestor App Chain
-  - rpt_teams: collect customer requests and status
-  - rpt_etl: runs etl scripts 
-  - rpt_store: stores result set with id and params in object database.
-  - rpt_excel: creates excel
-  - rpt_move: move excel to one drive and s3 storage
-  - rpt_mail: send email with one drive link
+  - rs_teams: collect customer requests and status
+  - rs_etl: runs etl scripts 
+  - rs_store: stores result set with id and params in the object database.
+  - rs_excel: creates excel
+  - rs_move: Move Excel to one drive and s3 storage
+  - rs_mail: send email with one drive link
 
 ## Microsoft Graph Access Token App
   - Responsible for getting and refreshing the msgraph repsys access token.
@@ -34,15 +39,15 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
   
 ## Azure MIS resources
   - **[M365 E5 license](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5?activetab=pivot:overviewtab)** includes Power BI Pro. Have it for Mobex and have Linamar contact.  
-  - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** anyone with this subscription can create our source code repos. Would like one of these since have lot's of repos and am always adding ssh key to repos.
+  - **[Visual Studio Subscriptions](https://visualstudio.microsoft.com/subscriptions/)** Anyone with this subscription can create our source code repos. Would like one of these since have lots of repos and am always adding ssh keys to repos.
 - Create a series of small REST apps.
   - get an access token using the credential flow.
-  - get a user profile using oidc authentication.
-  - send email with attachment from s3 storage. 
+  - get a user profile using OIDC authentication.
+  - send email with one drive links to Excel files. 
 - Created fork of **[Postman Microsoft Graph collection](https://learn.microsoft.com/en-us/graph/use-postman)** for testing and practice.
 - Practiced Azure app registration from the command line
-- Tested sending email from my developers tenant.
-- Determine the minimum permissions necessary to send email with Azure app.
+- Tested sending email from my developer's tenant.
+- Determine the minimum permissions necessary to send email with the Azure app.
 - Practice getting admin consent for these apps.
 - **[Create a message with a file attachment and send the message using Golang](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0&tabs=go#example-3-create-a-message-with-a-file-attachment-and-send-the-message)**
 
@@ -53,7 +58,7 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 
 ## Notes
 
-- You can use a basic office 365 account from an azure account but it is considered an external user not in the tennant so when registering an app you must use the common not tenant endpoints and allow all organizations to access.
+- You can use a basic Office 365 account from an Azure account but it is considered an external user not in the tenant so when registering an app you must use the common not tenant endpoints and allow all organizations to access them.
 
 ## Flow charts and diagrams in Markdown
 
@@ -81,9 +86,9 @@ erDiagram
 
   SQL Fiddle is more than just an online SQL editor; it's a comprehensive platform designed to support your journey in mastering SQL. Whether you're a beginner looking to grasp the basics or an experienced professional refining your skills, SQL Fiddle provides the tools and resources you need to succeed.
 
-  You can use this website as:
+  You can use this website:
 
-  Your personal sandbox to practice online SQL
+  Your sandbox to practice online SQL
   A platform to share SQL queries with your colleagues
   An online SQL editor to ask or answer SQL questions on Stack Overflow
   SQL Fiddle is dedicated to fostering a supportive and dynamic learning environment, empowering you to achieve your SQL goals and excel in your database endeavors.
@@ -96,18 +101,18 @@ erDiagram
 
 The goal is to get Azure resource costs to be approximately $500 per month. Also to request a resource group named "repsys" in which the user "<bGroves@linamar.com>" is assigned the "Contributor" role.
 
-- Access Azure Portal
+- Access the Azure Portal
 - Send Mail with Graph API or smtp
 <https://learn.microsoft.com/en-us/entra/identity-platform/scenario-daemon-overview>
 - create Azure SQL database
-Your administrator has disabled the App registrations experience in the Azure portal. You can still register or manage applications using PowerShell or another client such as Visual Studio.
+Your administrator has disabled the App registration experience in the Azure portal. You can still register or manage applications using PowerShell or another client such as Visual Studio.
 
 - Create an Excel file showing the estimated monthly cost of all Azure resources.
 - Contact IT and IS team to gather any resource needs I may be unaware of.
-- Back up our Azure SQL work and data warehouse database schemas to an  on-premise SQL Server 2022 running in a Docker container.
+- Back up our Azure SQL work and data warehouse database schemas to an on-premise SQL Server 2022 running in a Docker container.
 - Create a bash script and the Azure CLI to create all Azure resources.
 - research ip6 addresses and subnet for k8s and OpenStack.
-- Conduct meetings as-needed with Brent H. Amir, Jarod, and Kevin.
+- Conduct meetings as needed with Brent H. Amir, Jarod, and Kevin.
 
 ## To do
 
@@ -117,8 +122,8 @@ Your administrator has disabled the App registrations experience in the Azure po
 - Research HTTP and TCP using GoLang libraries
 - Research OAuth2 and OIDC using Github and Azure Identity Platforms.
 - Research HTMX to create SPA.
-- Go web app in aks and teams
-- azgraph api using certificate
+- Go web app in AKS and teams
+- azgraph API using certificate
 - rsdw on reports5 in k8s
 - add Azure app registration code to az CLI bash script
 - Install OpenStack/K8s cluster on 3 R620s
@@ -178,10 +183,9 @@ END
 - SQL window functions - More concise multiple grouping of records called partitions.
 
 Example: When we partition records into serial_no and order by change date and lag by 1 the previous record in the partition could have the same location.  If we partition by serial_no and location when we lag by 1 the previous record will have a different location. This partion will group represent every same location change record as just 1 record and we loose the fact that a container could move to a location more than once in its history.
-
 ## What is OpenStack
 
-It is an API for a hypervisor.
+It is a clusterable hypervisor which can be driven by an API.
 
 ## What is a hypervisor?
 
