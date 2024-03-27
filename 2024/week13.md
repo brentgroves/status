@@ -21,6 +21,24 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
+## OAuth2 vs Legacy Identity and Access Management (IAM)
+
+- Microsoft Identity Provider or Key Stone are examples of OAuth IAM
+- Plex classic uses legacy identity management
+  
+### Legacy IAM 
+- relies on system accounts which is user account with escalated premissions.
+- system accounts are created by the IT staff and their passwords can change
+- Plex classic has system accounts that can be used to access SOAP web services which can do most anything in Plex
+ 
+### OAuth IAM
+- Has clients which are the apps with claims which are the permissions they have.
+- Clients are registered with the IAM provider by the developer
+- Certificates or secrets are used in the identification process
+- Claim permissions are consented to by Admins
+- ID and Access tokens can be requested by clients for different purposes by many types of OAuth flows. 
+-  Microsoft uses OAuth IAM to access its graph API which can also be used to do most anything pertaining to any of their M365 apps.
+
 ## Microsoft 365 developers account
 
 I was fortunate enough to get into this program which is closed now.  If you would like to test something in Azure just ask me and I will give you access.
