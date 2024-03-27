@@ -25,13 +25,20 @@ This is a markdown file and can be viewed in Visual Studio Code or any online vi
 
 I was fortunate enough to get into this program which is closed now.  If you would like to test something in Azure just ask me and I will give you access.
 
-## Report Requestor App Chain
+## Report System App Chain
 
-- rs_teams: collect customer requests and status
+Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft teams app. These apps either act identipendantly in isolation which is the case with rs_credential, or accept direction from an MQTT publish/subscribe model topic server, or are REST or Graph API driven. The web apps are monitored and secured by our Kong app server with certificates created by our PKI.
+
+- rs_teams: teams app which collect customer report requests and gives status
+- rs_requestor: web app which collects customer report requests and gives status
+- rs_oidc: identifies the user using OpenID.
+- rs_oauth: redirect endpoint which changes OAuth code for an access token
+- rs_credential: uses OAuth client credential flow to keep an Microsoft Graph access token refreshed for use by other apps.
 - rs_etl: runs etl scripts
 - rs_store: stores result set with id and params in the object database.
 - rs_excel: creates excel
-- rs_move: Move Excel to one drive and s3 storage
+- rs_s3: moves file to s3 storage
+- rs_one_drive: moves Excel to one drive from s3 storage
 - rs_mail: send email with one drive link
 
 ## **[Microsoft Graph](https://dzone.com/articles/getting-access-token-for-microsoft-graph-using-oau)**
