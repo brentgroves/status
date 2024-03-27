@@ -21,17 +21,42 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
+## OAuth2 vs Legacy Identity and Access Management (IAM)
+
+- Microsoft Identity Provider or Key Stone are examples of OAuth IAM
+- Plex classic uses legacy identity management
+  
+### Legacy IAM 
+- relies on system accounts which is user account with escalated premissions.
+- system accounts are created by the IT staff and their passwords can change
+- Plex classic has system accounts that can be used to access SOAP web services which can do most anything in Plex
+ 
+### OAuth IAM
+- Has clients which are the apps with claims which are the permissions they have.
+- Clients are registered with the IAM provider by the developer
+- Certificates or secrets are used in the identification process
+- Claim permissions are consented to by Admins
+- ID and Access tokens can be requested by clients for different purposes by many types of OAuth flows. 
+-  Microsoft uses OAuth IAM to access its graph API which can also be used to do most anything pertaining to any of their M365 apps.
+
 ## Microsoft 365 developers account
 
 I was fortunate enough to get into this program which is closed now.  If you would like to test something in Azure just ask me and I will give you access.
 
-## Report Requestor App Chain
+## Report System App Chain
 
-- rs_teams: collect customer requests and status
+Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft teams app. These apps either act identipendantly in isolation which is the case with rs_credential, or accept direction from an MQTT publish/subscribe model topic server, or are REST or Graph API driven. The web apps are monitored and secured by our Kong app server with certificates created by our PKI.
+
+- rs_teams: teams app which collect customer report requests and gives status
+- rs_requestor: web app which collects customer report requests and gives status
+- rs_oidc: identifies the user using OpenID.
+- rs_oauth: redirect endpoint which changes OAuth code for an access token
+- rs_credential: uses OAuth client credential flow to keep an Microsoft Graph access token refreshed for use by other apps.
 - rs_etl: runs etl scripts
 - rs_store: stores result set with id and params in the object database.
 - rs_excel: creates excel
-- rs_move: Move Excel to one drive and s3 storage
+- rs_s3: moves file to s3 storage
+- rs_one_drive: moves Excel to one drive from s3 storage
 - rs_mail: send email with one drive link
 
 ## **[Microsoft Graph](https://dzone.com/articles/getting-access-token-for-microsoft-graph-using-oau)**
