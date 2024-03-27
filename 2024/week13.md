@@ -45,6 +45,9 @@ I was fortunate enough to get into this program which is closed now.  If you wou
 
 ## Report Requestor App Chain
 
+- rs_oidc: identifies the user using OpenID.
+- rs_oauth: redirect endpoint which changes OAuth code for an access token
+- rs_credential: uses OAuth client credential flow to keep an Microsoft Graph access token refreshed for use by other apps.
 - rs_teams: collect customer requests and status
 - rs_etl: runs etl scripts
 - rs_store: stores result set with id and params in the object database.
