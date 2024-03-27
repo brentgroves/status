@@ -45,11 +45,13 @@ I was fortunate enough to get into this program which is closed now.  If you wou
 
 ## Report System App Chain
 
-Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster.
+Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft teams app.
+
+- rs_teams: teams app which collect customer report requests and gives status
+- rs_requestor: web app which collects customer report requests and gives status
 - rs_oidc: identifies the user using OpenID.
 - rs_oauth: redirect endpoint which changes OAuth code for an access token
 - rs_credential: uses OAuth client credential flow to keep an Microsoft Graph access token refreshed for use by other apps.
-- rs_teams: collect customer requests and status
 - rs_etl: runs etl scripts
 - rs_store: stores result set with id and params in the object database.
 - rs_excel: creates excel
