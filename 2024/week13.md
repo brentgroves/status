@@ -45,7 +45,7 @@ I was fortunate enough to get into this program which is closed now.  If you wou
 
 ## Report System App Chain
 
-Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft teams app.
+Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft teams app. These apps either act identipendantly in isolation which is the case with rs_credential, or accept direction from an MQTT publish/subscribe model topic server, or are REST or Graph API driven. The web apps are monitored and secured by our Kong app server with certificates created by our PKI.
 
 - rs_teams: teams app which collect customer report requests and gives status
 - rs_requestor: web app which collects customer report requests and gives status
