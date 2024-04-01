@@ -1,6 +1,6 @@
 # Father's direction
 
-My son you can not find peace in contentment in work.  My intentions for work is that it can be a time we can enjoy together and that you can enjoy helping others. Peace and contentment will come when you follow me as I guide you in what to say and do. All results for my work for you are in my hands. I may decide for you to wait on many things to teach you that work can not be a source of peace and contentment.
+My son you can not find peace in contentment in work.  My intentions for work is that it can be a time we can enjoy together and that you can enjoy helping others. Peace and contentment will come when you follow me as I guide you in what to say and do. All results for the work I have for you are in my hands. I may decide to have you wait or fail at the tasks you take on in order to teach you that work can never be a reliable source of peace and contentment.
 
 My son do not be anxious when there is so many things to do.  Instead look to us for guidance and we will help you with each task.  Remember we have a plan for you and we will be with you each step of the way so do not worry our son.
 
@@ -12,7 +12,7 @@ The world's love is performance based, but my love is unconditional. The world's
 
 ```text
 Good morning dear ones,
-I hope you and your loved ones are doing well today and I value each one of you as friends who work together enjoying each others company as we get what needs done :-)  As always please feel free to call me at home or at work about anything you like!  
+I hope you all had a peaceful and happy Easter, and I wish Brad and his new wife safe travels and a joyous marriage!  As always please feel free to call me at home or at work about anything you like!  
 
 Sincerely yours,
 Brent G.
@@ -27,13 +27,13 @@ I was fortunate enough to get into this program which is closed now.  If you wou
 
 ## Report System App Chain
 
-Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft teams app. These apps either act identipendantly in isolation which is the case with rs_credential, or accept direction from an MQTT publish/subscribe model topic server, or are REST or Graph API driven. The web apps are monitored and secured by our Kong app server with certificates created by our PKI.
+Consists of the following small apps which are each dedicated to one purpose. These apps are running in Kubernetes and relying on open source software which is also running in a Kubernetes cluster. This system accepts report requests from both a stand-alone web app and a Microsoft Teams app. These apps either act idependantly in isolation which is the case with rs_credential, or accept direction from an MQTT publish/subscribe model topic server, or are REST or Graph API driven. The web apps are monitored and secured by our Kong app server with certificates created by our PKI.
 
-- rs_teams: teams app which collect customer report requests and gives status
-- rs_requestor: web app which collects customer report requests and gives status
+- rs_teams: teams app which collects customer report requests and gives status
+- rs_requestor: web app that collects customer report requests and gives status
 - rs_oidc: identifies the user using OpenID.
 - rs_oauth: redirect endpoint which changes OAuth code for an access token
-- rs_credential: uses OAuth client credential flow to keep an Microsoft Graph access token refreshed for use by other apps.
+- rs_credential: uses OAuth client credential flow to keep a Microsoft Graph access token refreshed for use by other apps.
 - rs_etl: runs etl scripts
 - rs_store: stores result set with id and params in the object database.
 - rs_excel: creates excel
