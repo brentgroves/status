@@ -12,7 +12,7 @@ The world's love is performance based, but my love is unconditional. The world's
 
 ```text
 Good morning dear ones,
-I hope you all had a peaceful and happy Easter, and I wish Brad and his new wife safe travels and a joyous marriage!  As always please feel free to call me at home or at work about anything you like!  
+I hope each of you had a very pleasant and joyous weekend and my congratulations to Brad and his bride!  As always please feel free to call me at home or at work about anything you like!  
 
 Sincerely yours,
 Brent G.
@@ -21,9 +21,9 @@ Brent G.
 
 This is a markdown file and can be viewed in Visual Studio Code or any online viewer such as <https://markdownlivepreview.com/>
 
-## Microsoft 365 developers account
+## Trial balance
 
-I was fortunate enough to get into this program which is closed now.  If you would like to test something in Azure just ask me and I will give you access.
+Ran the Trial Balance using a MySql statefulset deployment using Avilla's k8s cluster.  Working on migrating MySQL 8.0 to MySQL InnoDB cluster and Migrating Azure SQL MI backup to Azure SQL db using the SQL Server 2022 statefulset deployed on the Avilla K8s cluster. Once the MI to Azure SQL db migration is done then request an Azure SQL db on the Linamar tenant. 
 
 ## Report System App Chain
 
