@@ -24,5 +24,13 @@ Brent G.
 
 ## How to deal with planned and unplanned reboots
 
-Used operators to install a 2 instance Postgres and MySQL InnoDB Cluster, and Redis cache database on 3 node K8s Clusters. Then rebooted the nodes in different ways to see what problems can arise and what can be done to fix them. Tested Kured which is meant to assist in the node reboot process while keeping software running on other nodes.  
+Used operators to install a 2 instance Postgres and MySQL InnoDB Cluster, and Redis cache database on 3 node K8s Clusters. Then rebooted the nodes in different ways to see what problems can arise and what can be done to fix them. Tested Kured which is meant to assist in the node reboot process while keeping software running on other nodes using a draining technique.
 
+## Old to new schemas
+
+- Migrate MySQL 8.0 Server to MySQL InnoDB which has a router and a group replication feature.  The requirement for group replication is that all tables must have a primary key explicitly defined, but most of our MI tables do so this migration should not be difficult.
+- Azure CLI script to create an Azure SQL db that meets our data warehousing needs.
+- Migrate Azure SQL MI to Azure SQL db. Unfortunately, can't simply backup MI and import into SQL db, so, must write an ETL script.
+- Test backup for Azure SQL db once our Azure SQL MI schema is migrated to it.
+- Install Redis cache database onto k8s cluster running MySQL InnoDB and Postgres Clusters.  
+- Then do planned and unplanned rebooting of K8s nodes trying to crash the software and figuring out what to do in each case. 
