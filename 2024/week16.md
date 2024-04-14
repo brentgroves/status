@@ -21,8 +21,7 @@ Brent G.
 
 **![MySQL Operator Architecture](https://dev.mysql.com/doc/mysql-operator/en/images/mysql-operator-architecture.png)**
 
-
-## How to deal with planned and unplanned reboots
+## Failover Testing (How to deal with planned and unplanned reboots)
 
 Used operators to install a 2 instance Postgres and MySQL InnoDB Cluster, and Redis cache database on 3 node K8s Clusters. Then rebooted the nodes in different ways to see what problems can arise and what can be done to fix them. Tested Kured which is meant to assist in the node reboot process while keeping software running on other nodes using a draining technique.
 
