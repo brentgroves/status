@@ -1,6 +1,6 @@
 # Father's direction
 
-My son you can not find peace in contentment in work.  My intentions for work is that it can be a time we can enjoy together and that you can enjoy helping others. Peace and contentment will come when you follow me as I guide you in what to say and do. All results for the work I have for you are in my hands. I may decide to have you wait or fail at the tasks you take on in order to teach you that work can never be a reliable source of peace and contentment.
+My son you can not find peace and contentment in work.  My intentions for work is that it can be a time we can enjoy together helping others. Peace and contentment will come when you follow me as I guide you in what to say and do. All results of your work are in my hands. I may decide to have you wait or fail at the tasks I have planned for you.  The work I give you is meant to teach you that work can never be a reliable source of peace and contentment. The only reliable source of these wonderful things is doing what is right by following me.
 
 My son do not be anxious when there is so many things to do.  Instead look to us for guidance and we will help you with each task.  Remember we have a plan for you and we will be with you each step of the way so do not worry our son.
 
@@ -12,7 +12,7 @@ The world's love is performance based, but my love is unconditional. The world's
 
 ```text
 Good morning dear ones,
-I hope you all had a peaceful and happy Easter, and I wish Brad and his new wife safe travels and a joyous marriage!  As always please feel free to call me at home or at work about anything you like!  
+I wish each of you a pleasant and prosperous week in this beautiful time of year :-)  As always please feel free to call me at home or at work about anything you like!  
 
 Sincerely yours,
 Brent G.
@@ -23,7 +23,7 @@ Brent G.
 
 ## Failover Testing (How to deal with planned and unplanned reboots)
 
-Used operators to install a 2 instance Postgres and MySQL InnoDB Cluster, and Redis cache database on 3 node K8s Clusters. Then rebooted the nodes in different ways to see what problems can arise and what can be done to fix them. Tested Kured which is meant to assist in the node reboot process while keeping software running on other nodes using a draining technique.
+Used operators to install a 2 instance Postgres and MySQL InnoDB Cluster, and Redis cache database on 3 node K8s Clusters. Then rebooted the nodes in different ways to see what problems can arise and what can be done to fix them. Tested Kured which is meant to assist in the node reboot process while keeping software running on other nodes using a draining technique. Tested MySQL InnoDB data is getting replicated to all the database instanceds. Verified database is still accessible by the router while one node is being rebooted. 
 
 ## Old to new schemas
 
