@@ -91,63 +91,28 @@ Get unlimited, cloud-hosted private Git repos and collaborate to build better co
 Azure pipelines (nice to have)
 Build, test, and deploy with CI/CD that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continuously.
 
-**![MySQL Operator Architecture](https://dev.mysql.com/doc/mysql-operator/en/images/mysql-operator-architecture.png)**
+## **[Setup Redis Enterprise on Kubernetes](https://redis.io/docs/latest/operate/kubernetes/architecture/)**
 
-## Failover Testing (How to deal with planned and unplanned reboots)
+Used to communicate between the repsys requestor and pipeline components.
 
-Used operators to install a 2 instance Postgres and MySQL InnoDB Cluster, and Redis cache database on 3 node K8s Clusters. Then rebooted the nodes in different ways to see what problems can arise and what can be done to fix them. Tested Kured which is meant to assist in the node reboot process while keeping software running on other nodes using a draining technique. Tested MySQL InnoDB data is getting replicated to all the database instanceds. Verified database is still accessible by the router while one node is being rebooted.
+**[Redis game server usage](https://news.ycombinator.com/item?id=2705613)**
 
-## Old to new schemas
+![](https://redis.io/docs/latest/images/rs/kubernetes-overview-network-attached-persistent-storage.png)
 
-- Migrate MySQL 8.0 Server to MySQL InnoDB which has a router and a group replication feature.  The requirement for group replication is that all tables must have a primary key explicitly defined, but most of our MI tables do so this migration should not be difficult.
-- Azure CLI script to create an Azure SQL db that meets our data warehousing needs.
-- Migrate Azure SQL MI to Azure SQL db. Unfortunately, can't simply backup MI and import into SQL db, so, must write an ETL script.
-- Test backup for Azure SQL db once our Azure SQL MI schema is migrated to it.
-- Install Redis cache database onto k8s cluster running MySQL InnoDB and Postgres Clusters.  
-- Then do planned and unplanned rebooting of K8s nodes trying to crash the software and figuring out what to do in each case.
+![](https://redis.io/docs/latest/images/rs/kubernetes-overview-performance-improvements-write.png)
 
-## reboot use case
+![](https://redis.io/docs/latest/images/rs/kubernetes-overview-multiple-services-per-pod.png)
 
-### Use kured to drain and reboot nodes after package updates
+## Network-attached persistent storage
 
-```bash
-# go to node to reboot
-sudo touch /var/run/reboot-required
-kubectl get nodes -watch
-# or
-# Or look at the logs to see the reboot
-kubectl get pods -n kube-system -owide | grep kured
-kubectl logs -f kured-q5v9f -n kube-system
-## error rebooting last node
-# error when evicting pods/"mycluster-1" -n "default" (will retry after 5s): Cannot evict pod as it would violate the pod's disruption budget.
-# sometimes it does finally reboot the last node but then
+Kubernetes and cloud-native environments require that storage volumes be network-attached to the compute instances, to guarantee data durability. Otherwise, if using local storage, data may be lost in a Pod failure event. See the figure below:
 
-kubectl get all
-pod/mycluster-router-6444b6fc88-rr4d2   0/1     CrashLoopBackOff   7 (110s ago)   13m
+![](https://redis.io/docs/latest/images/rs/kubernetes-overview-network-attached-persistent-storage.png)
 
-# change the router instances to 0 and wait for the router pod and deployment to be removed
-kubectl edit innodbcluster mycluster
-# set the router instance to 1
-kubectl edit innodbcluster mycluster
+On the left-hand side (marked #1), Redis Enterprise uses local ephemeral storage for durability. When a Pod fails, Kubernetes launches another Pod as a replacement, but this Pod comes up with empty local ephemeral storage, and the data from the original Pod is now lost.
 
-# kubectl edit postgresql acid-minimal-cluster
+On the right-hand side of the figure (marked #2), Redis Enterprise uses network-attached storage for data durability. In this case, when a Pod fails, Kubernetes launches another Pod and automatically connects it to the storage device used by the failed Pod. Redis Enterprise then instructs the Redis Enterprise database instance/s running on the newly created node to load the data from the network-attached storage, which guarantees a durable setup.
 
-kubectl get pods -n kube-system -owide | grep kured
-kubectl logs -f kured-w9gqk -n kube-system
-kubectl edit postgresql.acid.zalan.do/acid-minimal-cluster
+Redis Enterprise is not only great as an in-memory database but also extremely efficient in the way it uses persistent storage, even when the user chooses to configure Redis Enterprise to write every change to the disk. Compared to a disk-based database that requires multiple interactions (in most cases) with a storage device for every read or write operation, Redis Enterprise uses a single IOPS, in most cases, for a write operation and zero IOPS for a read operation. As a result, significant performance improvements are seen in typical Kubernetes environments, as illustrated in the figures below:
 
-kubectl edit innodbcluster mycluster
-
-```
-
-```yaml
-apiVersion: "acid.zalan.do/v1"
-kind: postgresql
-metadata:
-  name: acid-minimal-cluster
-spec:
-  teamId: "acid"
-  volume:
-    size: 20Gi
-  numberOfInstances: 2
-```
+![](https://redis.io/docs/latest/images/rs/kubernetes-overview-performance-improvements-write.png)
