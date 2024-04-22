@@ -23,6 +23,14 @@ Brent G.
 
 This is a markdown file if it looks a little strange. You could use visual studio code or an online viewer such as <https://dillinger.io/>
 
+## redis standalone and sentinel or cluster
+
+Standalone works using an ot operator. Attempt to install a sentinel or cluster of redis.
+
+## Repsys Operator
+
+Make a go k8s operator to install and monitor repsys.
+
 ## Plex ODBC
 
 We did have to log into this ODBC account periodically do we still have to "mg.odbcalbion" if so how?
