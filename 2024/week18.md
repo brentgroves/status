@@ -23,6 +23,14 @@ Brent G.
 
 This is a markdown file if it looks a little strange. You could use visual studio code or an online viewer such as <https://dillinger.io/>
 
+## Operator ticketing system
+
+Which is better?
+
+- maintenance ticketing system
+- plex suggestion system
+- it ticketing system
+
 ## redis standalone and sentinel or cluster
 
 Standalone works using an ot operator. Attempt to install a sentinel or cluster of redis.
