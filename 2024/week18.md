@@ -23,14 +23,14 @@ Brent G.
 
 ## **[Link to view this Markdown document](https://github.com/brentgroves/status/blob/main/current/week18.md)**
 
-If you get an "unable to render error" then press the "<-->" button above mermaid diagram.
+You will get an "unable to render error" just press the "<-->" button above mermaid diagram.
 
 ## Best ways to create and view Markdown with Mermaid
 
 - **[Markdown Mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)**
 - **[JebBrains IDE](https://www.jetbrains.com/guide/go/tips/mermaid-js-support-in-markdown/)**
 
-[!Click this link to view mindmap](https://mermaid.ink/img/pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz?type=png)]
+![Click this link to view mindmap](https://mermaid.ink/img/pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz?type=png)]
 
 **[Click link to edit mindmap](https://mermaid.live/edit#pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz)**
 
@@ -130,53 +130,37 @@ gantt
 
 ```
 
-# Trial Balance Pipeline
+## Run TB Report
 
 ```mermaid
 sequenceDiagram
     participant dan as Dan
-    participant req as Requestor
+    participant req as Requester
     participant red as Redis
     participant run as Runner
     dan->>req: request report
-    req->>red: insert report request
-    run->>red: subscribe to report mutex and queue
-    loop Check for report request
-        run->>run: If mutex up then start etl pipeline
+    req->>red: insert TB request
+    run->>red: subscribe to TB queue
+    loop 
+        run->>run: Start TB ETL pipeline
     end
 ```
 
-## Pipeline Runner
+## Trial Balance Runner
+
+![](https://images.techhive.com/images/article/2017/02/pressure-water-line-100707995-large.jpg?auto=webp&quality=85,70)
 
 ```mermaid
-sequenceDiagram
-    participant run as Runner
-    participant s1 as AccountingYearCategoryType
-    participant s2 as AccountingAccount
-    participant s3 as AccountingPeriod
-    participant s4 as AccountingPeriodRanges
-
-    run->>s1: start AccountingYearCategoryType
-    s1->>s2: start AccountingAccount
-    s2->>s3: start AccountingPeriod
-    s3->>s4: start AccountingPeriodRanges
-
-```
-
-## Runner Continuation
-
-```mermaid
-sequenceDiagram
-    participant s4 as AccountingPeriodRanges
-    participant s5 as AccountingBalanceAppendPeriodRange
-    participant s6 as AccountActivitySummaryGetOpenPeriodRange
-    participant s7 as AccountPeriodBalanceRecreatePeriodRange
-    participant s8 as AccountPeriodBalanceRecreateOpenPeriodRange
-    s4->>s5: start AccountingBalanceAppendPeriodRange
-    s5->>s6: start AccountActivitySummaryGetOpenPeriodRange
-    s6->>s7: start AccountPeriodBalanceRecreatePeriodRange
-    s7->>s8: start AccountPeriodBalanceRecreateOpenPeriodRange
-
+flowchart TB
+    start[Start Runner] --> subscribe_queue[Subscribe to Redis TB queue]
+    subscribe_queue --> wait_tb_request[Wait for next TB request] 
+    wait_tb_request --> down_mutex[Down Redis TB mutex]
+    down_mutex -- Wait for Lock --> start_first_script[Start first ETL script]
+    start_first_script --> more_scripts{More ETL scripts?}
+    more_scripts -- Yes --> start_next_script[Start next ETL script]
+    start_next_script --> more_scripts
+    more_scripts -- No --> up_mutex[Up TB mutex]
+    up_mutex --> wait_tb_request[Wait for next TB request]
 ```
 
 ## Ticketing System Help
@@ -192,138 +176,10 @@ Question: What would be the best way for a CNC operator to inform management of 
 - plex suggestion system
 - it ticketing system
 
-## Trial Balance Pipeline Runner
-
-The ETL pipeline is a set of Go routines (threads) each of which is responsible for 1 ETL script. The TB runner's main thread begins the ETL pipeline by sending a message the first ETL script go routine.  Each ETL script go routine completes and then calls the next ETL script's go routine.  The final ETL script finishes and then sets the TB mutex up so that the runner's main thread can start the pipeline again.
-
-```psuedo_code
-create go routines (threads) and communitcation channels for each tb etl script in tb etl pipeline
-subscribe to redis tb mutex and request queue 
-
-infinite while loop
-    if tb queue not empty
-        remove request from queue
-        when tb mutex up
-            down tb mutex 
-            send request to 1st ETL script's go routine
-        end
-    end
-```
-
-## Trial Balance ETL script go routine
-
-Each ETL script's go routine either waits for a message from the runner's main thread in the case of the first ETL script's go routine or the previous ETL scripts go routine before it starts. If it completes successfully it sends a message to the next ETL script's go routine or in the case of the final ETL script's go routine inserts a record in the redis result list indicating it's completion status.
-
-```psuedo_code
-infinite while loop
-    if redis 
-    runner's main thread calls 1st ETL scripts go routine.
-    while more ETL scripts to run
-        if ETL script complete successfully
-            call the next ETL script's go routine
-        else
-            update redis result list to failed
-            send error message via email
-        end
-    end
-    last ETL script's go routine sets redis TB mutex up and inserts a record in the redis TB result list indicating it's completion status.
-end
-```
-
 ## Repsys Operator
 
-Make a go k8s operator to install and monitor repsys.
+Make a k8s operator to install and monitor repsys.
 
 ## Plex ODBC
 
 We did have to log into this ODBC account periodically do we still have to "mg.odbcalbion" if so how?
-
-## Report services request summary
-
-Reduce our Azure data warehouse costs from $748 to $30 per month by using an Azure SQL db service-hosted database instead of one hosted on an Azure SQL MI. Keep the Azure Kubernetes service as is at $290 per month.
-
-## **[Azure SQL MI](https://azure.microsoft.com/en-us/pricing/details/azure-sql-managed-instance/single/)**
-
-Currently, this Azure SQL MI hosts an Azure SQL database which is being used as our data warehouse.
-
-```yaml
-SQL managed instance: mgsqlmi
-databases: mgdw,ssisdb
-resource group: rg-useast-dataservices
-cost: $748/month
-plan: Migrate schema and import data into our Azure SQL db then delete this instance.
-status: This is being used to generate our Southfield's Plex Trial Balance report. In the future, our report system's Microsoft Teams accessible request/viewer/archive apps would use this.
-```
-
-## **[Azure SQL db](https://azure.microsoft.com/en-us/pricing/details/azure-sql-database/single/)**
-
-```yaml
-server: repsys
-database: rsdw
-resource group: repsys
-type: Standard S1: 20 DTUs
-cost: $30/month
-plan: Use this instead of Azure SQL MI.
-status: This service is running but the database schema and data have not been transferred from the database stored on the mgsqlmi MI.
-```
-
-## Azure AKS (Kubernetes)
-
-The plan is to run the minimal components of the report system from this 1-node K8s Cluster.  It is needed because Power BI reports and supporting apps running in Microsoft Teams tabs need to be accessible through an SSL-secured public IP.
-
-```yaml
-resource: reports-aks
-resource group: reports-aks
-Node pools: 1 node pool
-cost: $290/month
-status: This service is running but the request/viewer/archive apps are not ready yet.
-```
-
-## **[Setup Redis Enterprise on Kubernetes](https://redis.io/docs/latest/operate/kubernetes/architecture/)**
-
-Used to communicate between the repsys requestor and pipeline components.
-
-**[Redis game server usage](https://news.ycombinator.com/item?id=2705613)**
-
-![](https://redis.io/docs/latest/images/rs/kubernetes-overview-network-attached-persistent-storage.png)
-
-![](https://redis.io/docs/latest/images/rs/kubernetes-overview-performance-improvements-write.png)
-
-![](https://redis.io/docs/latest/images/rs/kubernetes-overview-multiple-services-per-pod.png)
-
-## Network-attached persistent storage
-
-Kubernetes and cloud-native environments require that storage volumes be network-attached to the compute instances, to guarantee data durability. Otherwise, if using local storage, data may be lost in a Pod failure event. See the figure below:
-
-![](https://redis.io/docs/latest/images/rs/kubernetes-overview-network-attached-persistent-storage.png)
-
-On the left-hand side (marked #1), Redis Enterprise uses local ephemeral storage for durability. When a Pod fails, Kubernetes launches another Pod as a replacement, but this Pod comes up with empty local ephemeral storage, and the data from the original Pod is now lost.
-
-On the right-hand side of the figure (marked #2), Redis Enterprise uses network-attached storage for data durability. In this case, when a Pod fails, Kubernetes launches another Pod and automatically connects it to the storage device used by the failed Pod. Redis Enterprise then instructs the Redis Enterprise database instance/s running on the newly created node to load the data from the network-attached storage, which guarantees a durable setup.
-
-Redis Enterprise is not only great as an in-memory database but also extremely efficient in the way it uses persistent storage, even when the user chooses to configure Redis Enterprise to write every change to the disk. Compared to a disk-based database that requires multiple interactions (in most cases) with a storage device for every read or write operation, Redis Enterprise uses a single IOPS, in most cases, for a write operation and zero IOPS for a read operation. As a result, significant performance improvements are seen in typical Kubernetes environments, as illustrated in the figures below:
-
-![](https://redis.io/docs/latest/images/rs/kubernetes-overview-performance-improvements-write.png)
-
-## Microsoft 365 E5 Plan
-
-Need E5 or E3 plan to get needed add-ons.
-Price per user/month (annual commitment) $57.00
-
-## Add-ons Available for Microsoft 365 E3 and E5 subscriptions
-
-- Power Automate (need this). Enables users to automate repetitive tasks and workflows. Available as an add-on for Microsoft 365 E3 and E5.
-- Power BI Pro (need this). Provides advanced data visualization and business intelligence features. Available as an add-on for Microsoft 365 E3 and E5.
-
-## Azure services
-
-- Azure SQL db (need this) - Power Automate used to copy data from Plex to DW.  All that we need with a much lower cost than Azure SQL MI.  
-- Azure AKS (Kubernetes) (need this) - Hosts Microsoft teams accessible report request web app.
-
-## Azure DevOps
-
-Azure Repos (need this)
-Get unlimited, cloud-hosted private Git repos and collaborate to build better code with pull requests and advanced file management.
-
-Azure pipelines (nice to have)
-Build, test, and deploy with CI/CD that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continuously.
