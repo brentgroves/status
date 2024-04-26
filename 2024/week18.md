@@ -23,17 +23,124 @@ Brent G.
 
 This is a markdown file if it looks a little strange. You could use visual studio code or an online viewer such as <https://dillinger.io/>
 
-## Operator ticketing system
+## Ticketing system
 
-Which is better?
+Rejection occurred because bar code engraver not working for a long period of time and management was unaware of the issue.
 
+Issue: CNC operators are expected to keep asking and calling management if important issues are not getting resolved. 
+Suggestion: Allow the CNC operators to enter priority issues that could lead to a rejection. 
+Question: What would be the best way for a CNC operator to inform management of critical issues.
+
+- call Jake
 - maintenance ticketing system
 - plex suggestion system
 - it ticketing system
 
-## redis standalone and sentinel or cluster
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Report System IT & Development
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
-Standalone works using an ot operator. Attempt to install a sentinel or cluster of redis.
+    section K8s
+    MySQL InnoDB Operator     :active,k1,2024-03-01,5d
+    Postgres Operator         :active,k2, after k1, 5d
+    Kong API Gateway          :active,k3, after k2, 5d
+    Redis Operator            :active,k4, after k3, 5d
+    Kured Operator            :active,k5, after k4, 5d
+    section Development
+    Runner                  :active,d1,2024-04-22,5d
+    Requester               :       d2,after d1,5d
+
+```
+
+# Trial Balance Pipeline
+
+```mermaid
+sequenceDiagram
+    participant dan as Dan
+    participant req as Requestor
+    participant red as Redis
+    participant run as Runner
+    dan->>req: request report
+    req->>red: insert report request
+    run->>red: subscribe to report mutex and queue
+    loop Check for report request
+        run->>run: If mutex up then start etl pipeline
+    end
+```
+
+## ETL pipeline
+
+```mermaid
+sequenceDiagram
+    participant run as Runner
+    participant s1 as AccountingYearCategoryType
+    participant s2 as AccountingAccount
+    participant s3 as AccountingPeriod
+    participant s4 as AccountingPeriodRanges
+
+    run->>s1: start AccountingYearCategoryType
+    s1->>s2: start AccountingAccount
+    s2->>s3: start AccountingPeriod
+    s3->>s4: start AccountingPeriodRanges
+
+```
+
+## continuation
+
+```mermaid
+sequenceDiagram
+    participant s4 as AccountingPeriodRanges
+    participant s5 as AccountingBalanceAppendPeriodRange
+    participant s6 as AccountActivitySummaryGetOpenPeriodRange
+    participant s7 as AccountPeriodBalanceRecreatePeriodRange
+    participant s8 as AccountPeriodBalanceRecreateOpenPeriodRange
+    s4->>s5: start AccountingBalanceAppendPeriodRange
+    s5->>s6: start AccountActivitySummaryGetOpenPeriodRange
+    s6->>s7: start AccountPeriodBalanceRecreatePeriodRange
+    s7->>s8: start AccountPeriodBalanceRecreateOpenPeriodRange
+
+```
+
+## Trial Balance Runner
+
+The ETL pipeline is a set of Go routines (threads) each of which is responsible for 1 ETL script. The TB runner's main thread begins the ETL pipeline by sending a message the first ETL script go routine.  Each ETL script go routine completes and then calls the next ETL script's go routine.  The final ETL script finishes and then sets the TB mutex up so that the runner's main thread can start the pipeline again.
+
+```psuedo_code
+create go routines (threads) and communitcation channels for each tb etl script in tb etl pipeline
+subscribe to redis tb mutex and request queue 
+
+infinite while loop
+    if tb queue not empty
+        remove request from queue
+        when tb mutex up
+            down tb mutex 
+            send request to 1st ETL script's go routine
+        end
+    end
+```
+
+## Trial Balance ETL script go routine
+
+Each ETL script's go routine either waits for a message from the runner's main thread in the case of the first ETL script's go routine or the previous ETL scripts go routine before it starts. If it completes successfully it sends a message to the next ETL script's go routine or in the case of the final ETL script's go routine inserts a record in the redis result list indicating it's completion status.
+
+```psuedo_code
+infinite while loop
+    if redis 
+    runner's main thread calls 1st ETL scripts go routine.
+    while more ETL scripts to run
+        if ETL script complete successfully
+            call the next ETL script's go routine
+        else
+            update redis result list to failed
+            send error message via email
+        end
+    end
+    last ETL script's go routine sets redis TB mutex up and inserts a record in the redis TB result list indicating it's completion status.
+end
+```
 
 ## Repsys Operator
 
