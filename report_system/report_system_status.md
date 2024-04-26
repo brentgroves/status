@@ -8,6 +8,33 @@ https://mermaid.js.org/intro/syntax-reference.html
 https://mermaid.js.org/syntax/gantt.html
 
 ```mermaid
+mindmap
+  root((Report System))
+    Azure Tenent
+      IAM
+      Azure SQL DB
+      ::icon(fa fa-book)
+      Blob Storage
+      AKS
+        redis
+        report requester
+    Plex ERP
+      ::icon(fa fa-book)
+      Soap Web Services
+      ODBC data source
+
+    On Premise
+      MicroK8s
+        Kong API Server
+        MySQL
+        Postgres
+        MongoDB
+        Redis
+        Report Runner
+
+```
+
+```mermaid
 gantt
     dateFormat  YYYY-MM-DD
     title       Report System IT & Development
@@ -24,13 +51,14 @@ gantt
     Minio S3 Object Storage   :s2,after s1, 5d
 
     section Databases
-    MySQL InnoDB              :db1,after s2,5d
-    Postgres                  :db2, after db1, 5d
-    MongoDB                   :db3, after db2, 5d
-    Redis Operator            :active,db4, after db3, 5d
+    Azure SQL DB              :db1,after s2,5d
+    MySQL InnoDB              :db2,after db1,5d
+    Postgres                  :db3, after db2, 5d
+    MongoDB                   :db4, after db3, 5d
+    Redis Operator            :active,db5, after db4, 5d
 
     section Ingres
-    NGinx IC                  :i1,after db4, 5d
+    NGinx IC                  :i1,after db5, 5d
     Kong API Gateway          :i2, after i1, 5d  
 
     section Observability
@@ -113,6 +141,15 @@ infinite while loop
             send request to 1st ETL script's go routine
         end
     end
+```
+
+```mermaid
+flowchart TD
+    A[Start] --> B{Are items in queue and pipeline idle?}
+    B -- Yes --> C[Start Pipeline]
+    C --> D[Repeat]
+    D --> B
+    B -- No --> D[Repeat]
 ```
 
 ## Trial Balance ETL script go routine
