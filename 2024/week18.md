@@ -109,7 +109,7 @@ sequenceDiagram
     end
 ```
 
-## ETL pipeline
+## Pipeline Runner
 
 ```mermaid
 sequenceDiagram
@@ -126,7 +126,7 @@ sequenceDiagram
 
 ```
 
-## ETL Pipeline Continuation
+## Runner Continuation
 
 ```mermaid
 sequenceDiagram
@@ -155,7 +155,7 @@ Question: What would be the best way for a CNC operator to inform management of 
 - plex suggestion system
 - it ticketing system
 
-## Trial Balance Runner
+## Trial Balance Pipeline Runner
 
 The ETL pipeline is a set of Go routines (threads) each of which is responsible for 1 ETL script. The TB runner's main thread begins the ETL pipeline by sending a message the first ETL script go routine.  Each ETL script go routine completes and then calls the next ETL script's go routine.  The final ETL script finishes and then sets the TB mutex up so that the runner's main thread can start the pipeline again.
 
