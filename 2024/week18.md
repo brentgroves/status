@@ -21,7 +21,7 @@ Brent G.
 260-564-4868
 ```
 
-## **[Link to view this Markdown document](https://github.com/brentgroves/status/blob/main/current/week18.md)**
+## **[Link to view this Markdown document](https://github.com/brentgroves/status/blob/main/2024/week18.md)**
 
 You will get an "unable to render error" just press the "<-->" button above mermaid diagram.
 
