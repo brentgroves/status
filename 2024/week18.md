@@ -23,7 +23,7 @@ The github viewer has timeout issues rendering mermaid diagrams. For each "unabl
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
-    title       Project List
+    title       Projects
     excludes    weekends
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
@@ -37,14 +37,16 @@ gantt
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
-    title       This Week's tasks
+    title       Task List
     excludes    weekends
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
     section K8s
     Redis Operator                                :d1,2024-04-22,5d
     section Development
-    Runner                                        :d1,2024-04-22,5d
+    K8s API access                                :d1,2024-04-22,1d
+    Redis Pub/Sub TB queue                        :d2,after d1,2d
+    Redis TB mutex                                :d3,after d2,2d
 
 ```
 
