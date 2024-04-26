@@ -11,7 +11,7 @@ Brent G.
 
 ## **[Link to view this Markdown document](https://github.com/brentgroves/status/blob/main/2024/week18.md)**
 
-You will get an "unable to render error" just press the "<-->" button above mermaid diagram.
+The github viewer has timeout issues rendering mermaid diagrams. For each "unable to render" error please press the "<-->" button above that mermaid diagram to render it.
 
 ## Best ways to create and view Markdown with Mermaid
 
