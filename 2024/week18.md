@@ -23,23 +23,34 @@ Brent G.
 
 This is a markdown file if it looks a little strange. You could use visual studio code or an online viewer such as <https://dillinger.io/>
 
-## working on it
 
-- in cluster and out of cluster k8s api access.
-- runner
-  
-## Ticketing system
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Project List
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
-Rejection occurred because bar code engraver not working for a long period of time and management was unaware of the issue.
+    section Projects
+    Report System                                   :p1,2024-04-22,5d
+    Tool Tracker                                    :p2,2024-04-22,5d
+    Observability System                            :p3,2024-04-22,5d
 
-Issue: CNC operators are expected to keep asking and calling management if important issues are not getting resolved. 
-Suggestion: Allow the CNC operators to enter priority issues that could lead to a rejection. 
-Question: What would be the best way for a CNC operator to inform management of critical issues.
+```
 
-- call Jake
-- maintenance ticketing system
-- plex suggestion system
-- it ticketing system
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       This Week's tasks
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section K8s
+    Redis Operator                                :d1,2024-04-22,5d
+    section Development
+    Runner                                        :d1,2024-04-22,5d
+
+```
 
 ```mermaid
 gantt
@@ -48,15 +59,37 @@ gantt
     excludes    weekends
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
-    section K8s
-    MySQL InnoDB Operator     :active,k1,2024-03-01,5d
-    Postgres Operator         :active,k2, after k1, 5d
-    Kong API Gateway          :active,k3, after k2, 5d
-    Redis Operator            :active,k4, after k3, 5d
-    Kured Operator            :active,k5, after k4, 5d
+    section Platforms
+    Dell R620s                :p1,2024-03-01,30d
+    OpenStack                 :p2,2024-03-01,30d
+    MicroK8s                  :p3,2024-03-01,30d
+
+    section Storage
+    Micro Ceph                :s1,2024-03-01,5d
+    Minio S3 Object Storage   :s2,after s1, 5d
+
+    section Databases
+    MySQL InnoDB              :db1,after s2,5d
+    Postgres                  :db2, after db1, 5d
+    MongoDB                   :db3, after db2, 5d
+    Redis Operator            :active,db4, after db3, 5d
+
+    section Ingres
+    NGinx IC                  :i1,after db4, 5d
+    Kong API Gateway          :i2, after i1, 5d  
+
+    section Observability
+    Metric Server             :o1,after i2,5d
+    Prometheus                :o2,after o1,5d
+    Grafana                   :o3,after o2,5d
+
+    section Maintenance
+    Kured Operator            :m1,after o3, 5d
+    Transfer from MI to Azure SQL db :m2, after m1,5d
+
     section Development
     Runner                  :active,d1,2024-04-22,5d
-    Requester               :       d2,after d1,5d
+    Requester               :d2,after d1,5d
 
 ```
 
@@ -93,7 +126,7 @@ sequenceDiagram
 
 ```
 
-## continuation
+## ETL Pipeline Continuation
 
 ```mermaid
 sequenceDiagram
@@ -108,6 +141,19 @@ sequenceDiagram
     s7->>s8: start AccountPeriodBalanceRecreateOpenPeriodRange
 
 ```
+
+## Ticketing System Help
+
+Rejection occurred because bar code engraver not working for a long period of time and management was unaware of the issue.
+
+Issue: CNC operators are expected to keep asking and calling management if important issues are not getting resolved. 
+Suggestion: Allow the CNC operators to enter priority issues that could lead to a rejection. 
+Question: What would be the best way for a CNC operator to inform management of critical issues.
+
+- call Jake
+- maintenance ticketing system
+- plex suggestion system
+- it ticketing system
 
 ## Trial Balance Runner
 
