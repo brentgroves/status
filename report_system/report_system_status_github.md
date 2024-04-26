@@ -8,31 +8,44 @@ This is a work in progress.  When finished we will have a Microsoft Teams tab ac
 <https://mermaid.js.org/syntax/gantt.html>
 
 ```mermaid
-mindmap
-  root((Report System))
-    Azure Tenent
-      IAM
-      Azure SQL DB
-      ::icon(fa fa-book)
-      Blob Storage
-      AKS
-        redis
-        report requester
-    Plex ERP
-      ::icon(fa fa-book)
-      Soap Web Services
-      ODBC data source
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Projects
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
-    On Premise
-      MicroK8s
-        Kong API Server
-        MySQL
-        Postgres
-        MongoDB
-        Redis
-        Report Runner
+    section Projects
+    Report System                                   :p1,2024-04-22,5d
+    Tool Tracker                                    :p2,2024-04-22,5d
+    Observability System                            :p3,2024-04-22,5d
 
 ```
+
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Task List
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section K8s
+    Redis Operator                                :d1,2024-04-22,5d
+    section Development
+    K8s API access                                :d1,2024-04-22,1d
+    Redis Pub/Sub TB queue                        :d2,after d1,2d
+    Redis TB mutex                                :d3,after d2,2d
+
+```
+
+## Task Notes
+
+- **[Research Redis mutex](https://dev.to/jdvert/handling-mutexes-in-distributed-systems-with-redis-and-go-5g0d)**
+- **[Research Redis Pub/Sub](https://redis.io/docs/latest/develop/interact/pubsub/)**
+- Create K8s API tutorial in **[go/tutorials/k8s](~/src/repsys/volumes/go/tutorials/k8s)**
+  - **[In-Cluster K8s API access](https://github.com/kubernetes/client-go/tree/master/examples/in-cluster-client-configuration)**
+  - **[Out-of-Cluster K8s API access](https://github.com/kubernetes/client-go/blob/master/examples/out-of-cluster-client-configuration/README.md)**
+
+![](https://mermaid.ink/img/pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz?type=png)
 
 ```mermaid
 gantt
