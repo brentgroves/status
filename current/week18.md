@@ -21,41 +21,15 @@ Brent G.
 260-564-4868
 ```
 
+## Link to view this Markdown document
+
 ## Ways to view Mermaid in Markdown
 
-- **[markdown mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)** or use the
+- **[Markdown Mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)** or use the
 - **[JebBrains IDE](https://www.jetbrains.com/guide/go/tips/mermaid-js-support-in-markdown/)**
+- **[Create a Markdown link and insert link into the Markdown file](https://mermaid.live/)**
 
-<https://www.mermaidchart.com/raw/58bee69e-cc6c-400f-989c-17682692d7a8?theme=light&version=v0.1&format=svg>
-
-[![](https://mermaid.ink/img/pako:eNpdUk1vnEAM_SvWnHYluoUFwYKqSknbW6NETXqpuEzAwKiMPZ2PqGS1_73sB2mSOdnvPdtPHu9Fwy2KSmhFrZamJgDL7FerC7BeHyGAW6t6Re6cAHxn6mFQzrOdFqyqVMO06iR08sMj8-_1wtyxCaO0ykmvmBYU4Noqr9wA5syDcVMz8Mj9BDL4gS08ME1wHZ7lpeoHOpS2GZYetwTYddh49YSEzn16tB8_S2qhQ-mDRfdKeBU869lBA43Fd05-uv_S8_ty0jwheGwGUn_Ce8G9t9JjP7czoyRS1L_lr2wfNJKHeYvmhX1gHl8a3SHB0ayRBu0C3qDVUrUiEvoSVWJ_JGvhB9RYi2oOW-xkGH0tajrM0nldfD9RIypvA0YimHY291XJ3kr9FvzWqvnXFsxI-sWsX6Wi2ou_osrLTZpusyIu0mKbpHkkJlEl2XZTlnmRxXGWl7s83h0i8Xyqjze7eLdNi6JM4jzJ4iSLBJ5G3Zwv7HRoh38PlMI5?type=png)](https://mermaid.live/edit#pako:eNpdUk1vnEAM_SvWnHYluoUFwYKqSknbW6NETXqpuEzAwKiMPZ2PqGS1_73sB2mSOdnvPdtPHu9Fwy2KSmhFrZamJgDL7FerC7BeHyGAW6t6Re6cAHxn6mFQzrOdFqyqVMO06iR08sMj8-_1wtyxCaO0ykmvmBYU4Noqr9wA5syDcVMz8Mj9BDL4gS08ME1wHZ7lpeoHOpS2GZYetwTYddh49YSEzn16tB8_S2qhQ-mDRfdKeBU869lBA43Fd05-uv_S8_ty0jwheGwGUn_Ce8G9t9JjP7czoyRS1L_lr2wfNJKHeYvmhX1gHl8a3SHB0ayRBu0C3qDVUrUiEvoSVWJ_JGvhB9RYi2oOW-xkGH0tajrM0nldfD9RIypvA0YimHY291XJ3kr9FvzWqvnXFsxI-sWsX6Wi2ou_osrLTZpusyIu0mKbpHkkJlEl2XZTlnmRxXGWl7s83h0i8Xyqjze7eLdNi6JM4jzJ4iSLBJ5G3Zwv7HRoh38PlMI5)
-
-```mermaid
-mindmap
-  root((Report System))
-    Azure Tenent
-      IAM
-      Azure SQL DB
-      ::icon(fa fa-book)
-      Blob Storage
-      AKS
-        redis
-        report requester
-    Plex ERP
-      ::icon(fa fa-book)
-      Soap Web Services
-      ODBC data source
-
-    On Premise
-      MicroK8s
-        Kong API Server
-        MySQL
-        Postgres
-        MongoDB
-        Redis
-        Report Runner
-
-```
+[![](https://mermaid.ink/img/pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz?type=png)](https://mermaid.live/edit#pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz)
 
 ```mermaid
 gantt
