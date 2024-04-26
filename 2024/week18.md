@@ -23,6 +23,11 @@ Brent G.
 
 This is a markdown file if it looks a little strange. You could use visual studio code or an online viewer such as <https://dillinger.io/>
 
+## working on it
+
+- in cluster and out of cluster k8s api access.
+- runner
+  
 ## Ticketing system
 
 Rejection occurred because bar code engraver not working for a long period of time and management was unaware of the issue.
