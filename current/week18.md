@@ -15,7 +15,19 @@ Brent G.
 
 [![](https://mermaid.ink/img/pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz?type=png)](https://mermaid.live/edit#pako:eNqFUk1v4kAM_SvWnEDKooRE-ZgblB4qipollSqtcpkmhh0tM04nk1Up4r_vkDSUPfVm-9nPzx8nVlGNjDMlda1EU2oAQ2Qnky02ZCwUx9aimk4vAMDiozMIz6hR2yEC8LDYjOYAFz8fYbUcY5zLivRkJ2AnfrwS_ZmOyPJAr1BYMmKPV4Z1MZpOCNayvXV7RQbfOnSizIDkB3yH-23-fb-CRAMv6Hqi-SsrvFI_rZZ3UAsroKXOVE7MgDxpyA0q2V7lbWRlaJ3eiFqT3sMif-hJR0196tHt4cvNqbV7gzeVG1dJX3sC2P4_7ucBtp3WF17mMYVGCVm7a50uaSWzv1Fhybgza9yJ7mBLVuqzSxWdpeKoK8at6dBjXePmw5UUeyMU4ztxaK_R-1q6I4yZjdC_iNSNy_iJvTMeZ7MwnEeJn4TJPAhjjx0ZD6L5LMviJPL9KM7S2E_PHvvo6_1Z6qfzMEmywI-DyA8ij2HfajO8XP95538_hrzz)
 
-[![](https://mermaid.ink/img/pako:eNqNUsFu2zAM_RWCQIEWUAJZ9uzY56ynBi3WXjboUMVmWq22ZEjyVi_Iv0-xk6EbBrQ8UXzk4xPJPda2IazwSZkQpIFojQp0bV2nAsDXaIvNZrFez1jQoSWY7c7Z71QHuNH-VEmvdTs05I_-T6IXMo2fkYsLuHw8w4-g6pr64MH3VOudrqeeHrR50xB2kwYWsdGD3UF4pokVLiX6wcSwxCuwDiT-aYYMtkMAY8Ocbl1zgo8sEpdX0syKfJSurTn_4qTzC_XWBbgffaAO3reqT5jgIlvwbCEE-9TMNA_WtvDgVP1CDj5EI_5Hc7v15H6orW51GD8gqurTf2mkQYYdxUnqJq55fySWGGfTkcQqug3t1NAGidIcYqoagr0fTY1VcAMxHPrjatZaPTnV_R383Ohg3TnWK_PN2u7NE6s9vmKVl8s0FVnBi7QQSZozHLFKMrEsy7zIOM_ycpXz1YHhr6meL1d8JdKiKBOeJxlPMoY0tdrMpzpd7OE3zv_Gow?type=png)](https://mermaid.live/edit#pako:eNqNUsFu2zAM_RWCQIEWUAJZ9uzY56ynBi3WXjboUMVmWq22ZEjyVi_Iv0-xk6EbBrQ8UXzk4xPJPda2IazwSZkQpIFojQp0bV2nAsDXaIvNZrFez1jQoSWY7c7Z71QHuNH-VEmvdTs05I_-T6IXMo2fkYsLuHw8w4-g6pr64MH3VOudrqeeHrR50xB2kwYWsdGD3UF4pokVLiX6wcSwxCuwDiT-aYYMtkMAY8Ocbl1zgo8sEpdX0syKfJSurTn_4qTzC_XWBbgffaAO3reqT5jgIlvwbCEE-9TMNA_WtvDgVP1CDj5EI_5Hc7v15H6orW51GD8gqurTf2mkQYYdxUnqJq55fySWGGfTkcQqug3t1NAGidIcYqoagr0fTY1VcAMxHPrjatZaPTnV_R383Ohg3TnWK_PN2u7NE6s9vmKVl8s0FVnBi7QQSZozHLFKMrEsy7zIOM_ycpXz1YHhr6meL1d8JdKiKBOeJxlPMoY0tdrMpzpd7OE3zv_Gow)
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Project List
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section Projects
+    Report System                                   :p1,2024-04-22,5d
+    Tool Tracker                                    :p2,2024-04-22,5d
+    Observability System                            :p3,2024-04-22,5d
+
+```
 
 ```mermaid
 gantt
