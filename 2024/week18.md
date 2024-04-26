@@ -21,7 +21,7 @@ Brent G.
 260-564-4868
 ```
 
-This markdown file has Mermaid diagrams so if it looks a little strange you could open visual studio code and install the **[markdown mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)** or use the **[JebBrains IDE](https://www.jetbrains.com/guide/go/tips/mermaid-js-support-in-markdown/)**.  Unfortunately, I have not found an online markdown editor that supports mermaid so if you copy and paste this document into an **[online markdown editor](https://dillinger.io/)** you will not see the mermaid diagrams.
+This markdown file has Mermaid diagrams so if it looks a little strange you could open visual studio code and install the **[markdown mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)** or use the **[JebBrains IDE](https://www.jetbrains.com/guide/go/tips/mermaid-js-support-in-markdown/)** then copy and paste this content into a file with an ".md" extension.  Unfortunately, I have not found an online markdown editor that supports mermaid, so if you copy and paste this document into an **[online markdown previewer](https://dillinger.io/)** you will not see the mermaid diagrams.
 
 ```mermaid
 mindmap
