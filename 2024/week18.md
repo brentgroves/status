@@ -148,8 +148,6 @@ sequenceDiagram
 
 ## Trial Balance Runner
 
-![](https://images.techhive.com/images/article/2017/02/pressure-water-line-100707995-large.jpg?auto=webp&quality=85,70)
-
 ```mermaid
 flowchart TB
     start[Start Runner] --> subscribe_queue[Subscribe to Redis TB queue]
