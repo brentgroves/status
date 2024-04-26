@@ -21,7 +21,14 @@ Brent G.
 260-564-4868
 ```
 
-This markdown file has Mermaid diagrams so if it looks a little strange you could open visual studio code and install the **[markdown mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)** or use the **[JebBrains IDE](https://www.jetbrains.com/guide/go/tips/mermaid-js-support-in-markdown/)** then copy and paste this content into a file with an ".md" extension.  Unfortunately, I have not found an online markdown editor that supports mermaid, so if you copy and paste this document into an **[online markdown previewer](https://dillinger.io/)** you will not see the mermaid diagrams.
+## Ways to view Mermaid in Markdown
+
+- **[markdown mermaid extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)** or use the
+- **[JebBrains IDE](https://www.jetbrains.com/guide/go/tips/mermaid-js-support-in-markdown/)**
+
+<https://www.mermaidchart.com/raw/58bee69e-cc6c-400f-989c-17682692d7a8?theme=light&version=v0.1&format=svg>
+
+[![](https://mermaid.ink/img/pako:eNpdUk1vnEAM_SvWnHYluoUFwYKqSknbW6NETXqpuEzAwKiMPZ2PqGS1_73sB2mSOdnvPdtPHu9Fwy2KSmhFrZamJgDL7FerC7BeHyGAW6t6Re6cAHxn6mFQzrOdFqyqVMO06iR08sMj8-_1wtyxCaO0ykmvmBYU4Noqr9wA5syDcVMz8Mj9BDL4gS08ME1wHZ7lpeoHOpS2GZYetwTYddh49YSEzn16tB8_S2qhQ-mDRfdKeBU869lBA43Fd05-uv_S8_ty0jwheGwGUn_Ce8G9t9JjP7czoyRS1L_lr2wfNJKHeYvmhX1gHl8a3SHB0ayRBu0C3qDVUrUiEvoSVWJ_JGvhB9RYi2oOW-xkGH0tajrM0nldfD9RIypvA0YimHY291XJ3kr9FvzWqvnXFsxI-sWsX6Wi2ou_osrLTZpusyIu0mKbpHkkJlEl2XZTlnmRxXGWl7s83h0i8Xyqjze7eLdNi6JM4jzJ4iSLBJ5G3Zwv7HRoh38PlMI5?type=png)](https://mermaid.live/edit#pako:eNpdUk1vnEAM_SvWnHYluoUFwYKqSknbW6NETXqpuEzAwKiMPZ2PqGS1_73sB2mSOdnvPdtPHu9Fwy2KSmhFrZamJgDL7FerC7BeHyGAW6t6Re6cAHxn6mFQzrOdFqyqVMO06iR08sMj8-_1wtyxCaO0ykmvmBYU4Noqr9wA5syDcVMz8Mj9BDL4gS08ME1wHZ7lpeoHOpS2GZYetwTYddh49YSEzn16tB8_S2qhQ-mDRfdKeBU869lBA43Fd05-uv_S8_ty0jwheGwGUn_Ce8G9t9JjP7czoyRS1L_lr2wfNJKHeYvmhX1gHl8a3SHB0ayRBu0C3qDVUrUiEvoSVWJ_JGvhB9RYi2oOW-xkGH0tajrM0nldfD9RIypvA0YimHY291XJ3kr9FvzWqvnXFsxI-sWsX6Wi2ou_osrLTZpusyIu0mKbpHkkJlEl2XZTlnmRxXGWl7s83h0i8Xyqjze7eLdNi6JM4jzJ4iSLBJ5G3Zwv7HRoh38PlMI5)
 
 ```mermaid
 mindmap
@@ -172,8 +179,8 @@ sequenceDiagram
 
 Rejection occurred because bar code engraver not working for a long period of time and management was unaware of the issue.
 
-Issue: CNC operators are expected to keep asking and calling management if important issues are not getting resolved. 
-Suggestion: Allow the CNC operators to enter priority issues that could lead to a rejection. 
+Issue: CNC operators are expected to keep asking and calling management if important issues are not getting resolved.
+Suggestion: Allow the CNC operators to enter priority issues that could lead to a rejection.
 Question: What would be the best way for a CNC operator to inform management of critical issues.
 
 - call Jake
