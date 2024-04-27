@@ -9,7 +9,7 @@ Brent G.
 260-564-4868
 ```
 
-## **[Link to view this Markdown document](https://github.com/brentgroves/status/blob/main/2024/week18.md)**
+## **[Link to view this Markdown document](https://github.com/brentgroves/repsys/blob/main/development/status/report_system/report_system_status_github.md)**
 
 The github viewer has timeout issues rendering mermaid diagrams. For each "unable to render" error please press the "<-->" button above that mermaid diagram to view it.
 
